@@ -1,0 +1,21 @@
+{
+    "title" : "[ArcCW] Arctic's Customizable Weapons (Base Only)",
+    "type" : "weapon",
+    "tags" : ["realism","roleplay"],
+	"ignore":
+	[
+		"*.cmd",
+		"*.ini",
+		"*.lnk",
+		"*.url",
+		"*.psd",
+        "*.bat",
+        ".git/*",
+        ".gitignore",
+        ".gitattributes",
+        "*.code-workspace",
+        "LICENSE",
+        "ArcCW.jpg",
+        "README.md"
+	]
+}

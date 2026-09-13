@@ -1,0 +1,36 @@
+--leak by matveicher
+--vk group - https://vk.com/codespill
+--steam - https://steamcommunity.com/profiles/76561198968457747/
+--ds server - https://discord.gg/7XaRzQSZ45
+--ds - matveicher
+
+att.PrintName = "Reduced Load"
+
+att.SortOrder = 18
+att.Icon = Material("entities/att/acwatt_uc_powder_low.png", "smooth mips")
+att.Description = "Underpressured ammunition places less strain on the weapon, but lowers muzzle velocity and cyclic rate."
+att.Desc_Pros = {
+}
+att.Desc_Cons = {
+}
+att.Desc_Neutrals = {
+}
+att.Slot = "uc_powder"
+
+att.AutoStats = true
+
+att.Mult_Recoil = 0.85
+att.Mult_Range = 0.8
+
+att.Mult_RPM = 0.95
+att.Mult_ShootVol = 0.9
+--att.Mult_ShootPitch = 1.05 please don't
+
+att.Mult_MalfunctionMean = 1.15
+att.Mult_PhysBulletMuzzleVelocity = 0.9
+
+--leak by matveicher
+--vk group - https://vk.com/codespill
+--steam - https://steamcommunity.com/profiles/76561198968457747/
+--ds server - https://discord.gg/7XaRzQSZ45
+--ds - matveicher

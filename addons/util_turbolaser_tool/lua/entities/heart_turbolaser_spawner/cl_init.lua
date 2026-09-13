@@ -1,0 +1,26 @@
+--leak by matveicher
+--vk group - https://vk.com/codespill
+--steam - https://steamcommunity.com/profiles/76561198968457747/
+--ds server - https://discord.gg/7XaRzQSZ45
+--ds - matveicher
+
+include("shared.lua");
+
+function ENT:Initialize()
+end
+
+function ENT:Draw()
+end
+
+function ENT:Think()
+end
+
+function ENT:OnRemove()
+end
+
+
+--leak by matveicher
+--vk group - https://vk.com/codespill
+--steam - https://steamcommunity.com/profiles/76561198968457747/
+--ds server - https://discord.gg/7XaRzQSZ45
+--ds - matveicher
