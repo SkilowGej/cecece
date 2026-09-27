@@ -391,7 +391,7 @@ RegisterItem{
 }
 
 RegisterItem{
-    nicename = 'Бомба',
+    nicename = 'Bomba',
     class = 'm9k_suicide_bomb',
     weptype = 'var',
     type = 'weapon',
@@ -402,7 +402,7 @@ RegisterItem{
 }
 
 RegisterItem{
-    nicename = 'Мина',
+    nicename = 'Mina',
     class = 'm9k_proxy_mine',
     weptype = 'var',
     type = 'weapon',

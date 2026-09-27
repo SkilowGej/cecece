@@ -4,14 +4,14 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-att.PrintName = "Взрывчатка"
+att.PrintName = "Materiały wybuchowe"
 att.Icon = Material("entities/acwatt_ammo_rpg7_he.png")
-att.Description = "Заряжайте фугасные ракеты, которые имеют больший радиус разлета, но не имеют реактивной струи, что снижает урон от удара."
+att.Description = "Załaduj rakiety wybuchowe, które mają większy zasięg, ale nie wytwarzają strumienia odrzutu, co zmniejsza obrażenia od uderzenia."
 att.Desc_Pros = {
-    "Большой радиус взрыва"
+    "Duży promień wybuchu"
 }
 att.Desc_Cons = {
-    "Уменьшенный урон от удара",
+    "Zmniejszone obrażenia od uderzenia",
 }
 att.AutoStats = true
 att.Slot = "ammo_rocket"

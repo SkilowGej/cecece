@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Нарукавник #1 (Левый)'
+ITEM.Name = 'Rękawica #1 (Lewy)'
 ITEM.Price = 30000
 ITEM.Model = 'models/galactic/cosmetics/phase1cosmetics/engi2arml.mdl'
 ITEM.Bone = true

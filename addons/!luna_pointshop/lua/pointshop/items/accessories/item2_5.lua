@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Головной Убор #4'
+ITEM.Name = 'Nakrycie głowy #4'
 ITEM.Price = 60000
 ITEM.Model = 'models/galactic/cosmetics/phase1cosmetics/glassesmask.mdl'
 ITEM.Bone = true

@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Афроамериканский Нож'
+ITEM.Name = 'Nóż afroamerykański'
 ITEM.Price = 360000
 ITEM.Model = 'models/gaminglight/vibroknives/w_vibroknife.mdl'
 ITEM.WeaponClass = 'vibrokinfe_hyper'

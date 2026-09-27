@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Десантура!'
+ITEM.Name = 'Desant!'
 ITEM.Price = 130000
 ITEM.Material = 'luna_menus/scoreboard/banners/banner18.png'
 ITEM.isBanner = true

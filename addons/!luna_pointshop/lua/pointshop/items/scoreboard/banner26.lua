@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Будущие Воины'
+ITEM.Name = 'Przyszli wojownicy'
 ITEM.Price = 160000
 ITEM.Material = 'luna_menus/scoreboard/banners/banner26.png'
 ITEM.isBanner = true

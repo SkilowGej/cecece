@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Отдых полезен'
+ITEM.Name = 'Odpoczynek jest korzystny'
 ITEM.Price = 210000
 ITEM.Material = 'luna_menus/scoreboard/banners/banner29.png'
 ITEM.isBanner = true

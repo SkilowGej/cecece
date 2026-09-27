@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'На Абордаж!'
+ITEM.Name = 'Na abordaż!'
 ITEM.Price = 170000
 ITEM.Material = 'luna_menus/scoreboard/banners/banner11.png'
 ITEM.isBanner = true

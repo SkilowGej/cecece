@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Нож Азимова'
+ITEM.Name = 'Nóż Asimova'
 ITEM.Price = 1000000
 ITEM.Model = 'models/gaminglight/vibroknives/w_vibroknife.mdl'
 ITEM.WeaponClass = 'vibrokinfe_asimov'

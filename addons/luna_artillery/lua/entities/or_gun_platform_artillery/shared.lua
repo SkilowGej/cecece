@@ -6,7 +6,7 @@
 
 ENT.Type			=	"anim"
 ENT.Base			=	"base_entity"
-ENT.PrintName		=	"Артиллерийская Платформа"
+ENT.PrintName		=	"Platforma artyleryjska"
 ENT.Spawnable		=	true
 ENT.Category 		=   "Renaissance • Oblężenie"
 

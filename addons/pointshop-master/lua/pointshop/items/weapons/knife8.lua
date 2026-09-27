@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Американский Нож'
+ITEM.Name = 'Nóż amerykański'
 ITEM.Price = 360000
 ITEM.Model = 'models/gaminglight/vibroknives/w_vibroknife.mdl'
 ITEM.WeaponClass = 'vibrokinfe_us'

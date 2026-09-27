@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-CATEGORY.Name = 'Рамки Аватарки'
+CATEGORY.Name = 'Ramki awatarów'
 CATEGORY.Icon = 'luna_ui_base/etc/plain-square.png'
 
 

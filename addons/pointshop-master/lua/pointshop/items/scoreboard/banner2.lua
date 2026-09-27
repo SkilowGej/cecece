@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Гривус в Нападении'
+ITEM.Name = 'Grievous w ataku'
 ITEM.Price = 150000
 ITEM.Material = 'luna_menus/scoreboard/banners/banner2.png'
 ITEM.isBanner = true

@@ -4,14 +4,14 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-att.PrintName = "Дымовая завеса"
+att.PrintName = "Kurtyna dymna"
 att.Icon = Material("entities/acwatt_ammo_rpg7_smoke.png")
-att.Description = "Дымовые ракеты, которые при попадании в цель создают широкую дымовую завесу. Также наносят легкий урон."
+att.Description = "Rakiety dymne, które po trafieniu w cel tworzą szeroką zasłonę dymną. Zadają również niewielkie obrażenia."
 att.Desc_Pros = {
-    "Дымовая завеса"
+    "Kurtyna dymna"
 }
 att.Desc_Cons = {
-    "Урон по радиусу",
+    "Obrażenia w promieniu",
 }
 att.AutoStats = true
 att.Slot = "ammo_rocket"

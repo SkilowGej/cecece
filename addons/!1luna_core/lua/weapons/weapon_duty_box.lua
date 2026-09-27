@@ -9,7 +9,7 @@ AddCSLuaFile()
 SWEP.PrintName			= "Pudełko z materiałami"
 SWEP.Author				= "_Dubrovski_"
 SWEP.Purpose    		= "Przenoszenie materiałów RE.Duty"
-SWEP.Category           = "SUP • Разное"
+SWEP.Category           = "PIWNICA • Różne"
 
 SWEP.ViewModel			= ""
 SWEP.WorldModel			= "models/props_junk/cardboard_box003a.mdl"

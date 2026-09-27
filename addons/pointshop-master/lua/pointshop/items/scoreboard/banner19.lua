@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Ракетный Привет'
+ITEM.Name = 'Rakietowe pozdrowienia'
 ITEM.Price = 125000
 ITEM.Material = 'luna_menus/scoreboard/banners/banner19.png'
 ITEM.isBanner = true

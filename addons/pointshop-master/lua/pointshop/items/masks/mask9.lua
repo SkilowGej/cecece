@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Шапка Горит'
+ITEM.Name = 'Czapka Pali się'
 ITEM.Price = 650000
 ITEM.Material = 'luna_menus/scoreboard/donate/mask9.png'
 

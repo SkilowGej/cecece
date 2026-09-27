@@ -6,9 +6,9 @@
 
 ENT.Type = "ai"
 ENT.Base = "base_ai"
-ENT.PrintName = "Галактический Маркет"
+ENT.PrintName = "Galaktyczny Market"
 ENT.Spawnable = true
-ENT.Category = "MetaHub | Разработки"
+ENT.Category = "MetaHub | Rozwój"
 
 
 

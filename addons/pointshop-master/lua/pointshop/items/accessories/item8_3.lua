@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Нарукавник #2'
+ITEM.Name = 'Nakładka na rękaw #2'
 ITEM.Price = 85000
 ITEM.Model = 'models/galactic/cosmetics/phase1cosmetics/l3pouch.mdl'
 ITEM.Bone = true

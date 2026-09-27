@@ -4,8 +4,8 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Пояс #1'
-ITEM.Price = 30000
+ITEM.Name = 'Pas #1'
+ITEM.Price = 50000
 ITEM.Model = 'models/galactic/cosmetics/phase1cosmetics/beltitem1.mdl'
 ITEM.Bone = true
 ITEM.Slot = 6

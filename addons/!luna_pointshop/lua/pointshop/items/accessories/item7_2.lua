@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Кобура #1 (Правый)'
+ITEM.Name = 'Kabura #1 (Prawy)'
 ITEM.Price = 30000
 ITEM.Model = 'models/galactic/cosmetics/phase1cosmetics/doublelegholsterr.mdl'
 ITEM.Bone = true

@@ -6,7 +6,7 @@
 
 SWEP.Base = "luna_x_arccw_base"
 SWEP.Spawnable = true -- this obviously has to be set to true
-SWEP.Category = "SUP • Оружейный Пак" -- edit this if you like
+SWEP.Category = "PIWNICA • Pakiet broni" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "Scattergun"

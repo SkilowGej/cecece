@@ -233,7 +233,7 @@ end)
 /* -------------------------------------------------------------------------- */
 
 hook.Add("SquadSystem.PostCommand", "adadad", function(index, data, ply)
-    if index == "Obrona okrężna!" or index == "Защищать позицию!" then
+    if index == "Obrona okrężna!" or index == "Bronić pozycji!" then
         local rand = math.random(1, 12)
         surface.PlaySound(string.format("summe/squadsystem/immersive/commands/defend/variant (%s).mp3", rand))
         return

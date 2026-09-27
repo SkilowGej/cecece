@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-CATEGORY.Name = 'Маски Аватарки'
+CATEGORY.Name = 'Maski awatarów'
 CATEGORY.Icon = 'luna_icons/balaclava.png'
 
 

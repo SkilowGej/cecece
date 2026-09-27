@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Наплечник #1 (Правый)'
+ITEM.Name = 'Naramiennik #1 (Prawy)'
 ITEM.Price = 65000
 ITEM.Model = 'models/galactic/cosmetics/phase1cosmetics/cadbane_arm_r.mdl'
 ITEM.Bone = true

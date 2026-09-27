@@ -144,9 +144,8 @@ local function ToggleScoreboard()
 		draw.SimpleText("SUP • Community", "SUP.Mont.Light.24", ResponsiveX(160), ResponsiveY(65), Color(202, 202, 202), 0, 1)
 		draw.SimpleText("Luna-core • рге-alpha 0.0.2", "SUP.Mont.Light.24", ResponsiveX(460), ResponsiveY(65), Color(202, 202, 202), 0, 1)]]
 
-		surface.SetDrawColor(color_white)
-		surface.SetMaterial(newlogosup1)
-		surface.DrawTexturedRect(ResponsiveX(1920 * .5 - (533 / 2)), ResponsiveY(65 - (359 / 2)), ResponsiveX(533), ResponsiveY(359))
+		
+	
 
 		-- local allPlayers = player.GetAll()
 		-- local currentMap = game.GetMap()
@@ -409,7 +408,7 @@ local function ToggleScoreboard()
 			openedInfoPanel:SetPos(playerPanel:GetX(), playerPanel:GetY() + ResponsiveY(53))
 		
 			local features = v:GetNetVar("features") or {}
-			local features_string = "Отсутствует"
+			local features_string = "Brak"
 		
 			for i, b in pairs(features or {}) do
 				if b then

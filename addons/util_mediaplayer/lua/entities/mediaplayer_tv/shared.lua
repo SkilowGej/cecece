@@ -99,7 +99,7 @@ else -- CLIENT
 		local scale = w / TextScale
 		Start3D2D( pos, ang, scale )
 			local tw, th = w / scale, h / scale
-			draw.SimpleText( "Нажмите E чтобы начать просмотр", luna.MontBase544,
+			draw.SimpleText( "Naciśnij E, aby rozpocząć oglądanie", luna.MontBase544,
 				tw/2, th/2, color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER )
 		End3D2D()
 	end

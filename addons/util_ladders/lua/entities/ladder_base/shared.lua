@@ -11,7 +11,7 @@ end;
 DEFINE_BASECLASS("base_entity");
 
 ENT.PrintName		= "Ladder (BASE)";
-ENT.Category		= "SUP • Лестницы";
+ENT.Category		= "SUP • Drabiny";
 ENT.Spawnable		= false;
 ENT.AdminOnly		= false;
 ENT.Model			= Model("models/props_c17/metalladder001.mdl");

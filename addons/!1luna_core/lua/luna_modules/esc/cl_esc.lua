@@ -68,7 +68,6 @@ function esc.openMenu()
 	fr.Paint = function(self)
 		Derma_DrawBackgroundBlur(self)
 
-        AddIcon( mats.logo, 60, -50, 536, 356, Color(255,255,255) )
 	end
 
     local frW, frH = fr:GetSize()

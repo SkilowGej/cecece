@@ -4,9 +4,9 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-att.PrintName = "Настройка стелса"
+att.PrintName = "Konfiguracja trybu ukrytego"
 att.Icon = Material("entities/acwatt_go_ammo_blanks.png", "mips smooth")
-att.Description = "Настройка «Скрытность» заставляет трасера становиться невидимыми!"
+att.Description = "Ustawienie «Ukrycie» sprawia, że pociski stają się niewidoczne!"
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

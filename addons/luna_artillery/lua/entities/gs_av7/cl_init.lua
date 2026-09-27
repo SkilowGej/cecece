@@ -58,7 +58,7 @@ function ENT:AVUse()
     local fire = vgui.Create("DButton", main)
     fire:SetSize(main:GetWide() * 0.2, main:GetTall() * 0.2)
     fire:SetPos(main:GetWide() - fire:GetWide() - step/2, main:GetTall() - fire:GetTall() - step/2)
-    fire:SetText("Огонь")
+    fire:SetText("Ogień")
     fire.Color = Color(255,255,255,120)
     fire.Paint = function(s,w,h)
         if s:IsHovered() then

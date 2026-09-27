@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Служба Дезинфекции'
+ITEM.Name = 'Służba dezynfekcji'
 ITEM.Price = 115000
 ITEM.Material = 'luna_menus/scoreboard/banners/banner13.png'
 ITEM.isBanner = true

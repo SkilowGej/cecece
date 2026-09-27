@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Дьявол носит Прада'
+ITEM.Name = 'Diabeł nosi Pradę'
 ITEM.Price = 250000
 ITEM.Material = 'luna_menus/scoreboard/donate/mask10.png'
 

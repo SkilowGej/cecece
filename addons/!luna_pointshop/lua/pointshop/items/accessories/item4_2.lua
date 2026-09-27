@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Нагрудник #2'
+ITEM.Name = 'Napierśnik #2'
 ITEM.Price = 150000
 ITEM.Model = 'models/galactic/cosmetics/phase1cosmetics/cadbane_vest.mdl'
 ITEM.Bone = true

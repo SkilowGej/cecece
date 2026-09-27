@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Головной Убор #6'
+ITEM.Name = 'Nakrycie głowy #6'
 ITEM.Price = 65000
 ITEM.Model = 'models/galactic/cosmetics/phase1cosmetics/mischelm7.mdl'
 ITEM.Bone = true

@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Хэллоуинский #28'
+ITEM.Name = 'Halloweenowy #28'
 ITEM.Price = 180000
 ITEM.Model = 'models/galactic/cosmetics/halloween/sf14_hooded_haunter_classes_heavy.mdl'
 ITEM.Bone = true

@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Тройная Защита'
+ITEM.Name = 'Potrójna ochrona'
 ITEM.Price = 800000
 ITEM.Material = 'luna_menus/scoreboard/donate/mask6.png'
 

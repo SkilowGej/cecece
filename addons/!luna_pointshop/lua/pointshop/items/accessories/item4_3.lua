@@ -4,8 +4,8 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Нагрудник #3'
-ITEM.Price = 85000
+ITEM.Name = 'Nakładka na klatkę piersiową nr 3'
+ITEM.Price = 50000
 ITEM.Model = 'models/galactic/cosmetics/phase1cosmetics/chestguard.mdl'
 ITEM.Bone = true
 ITEM.Slot = 4

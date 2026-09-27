@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Воздушное Сражение'
+ITEM.Name = 'Bitwa powietrzna'
 ITEM.Price = 160000
 ITEM.Material = 'luna_menus/scoreboard/banners/banner10.png'
 ITEM.isBanner = true

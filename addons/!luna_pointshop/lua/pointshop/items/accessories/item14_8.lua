@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Хэллоуинский #8'
+ITEM.Name = 'Halloweenowy #8'
 ITEM.Price = 100000
 ITEM.Model = 'models/galactic/cosmetics/halloween/hw2013_quacks_cureall.mdl'
 ITEM.Bone = true

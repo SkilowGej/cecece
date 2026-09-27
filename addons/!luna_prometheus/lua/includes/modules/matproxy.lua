@@ -23,7 +23,7 @@ function Call( name, mat, ent )
 	local proxy = ActiveList[ name ]
 	if not proxy then return end
 	if not proxy.bind then return end
-	proxy:bind( mat, ent )
+    proxy:bind( proxy.Material, ent )
 end
 
 --

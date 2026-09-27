@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Последний Вздох'
+ITEM.Name = 'Ostatni oddech'
 ITEM.Price = 200000
 ITEM.Material = 'luna_menus/scoreboard/banners/banner12.png'
 ITEM.isBanner = true

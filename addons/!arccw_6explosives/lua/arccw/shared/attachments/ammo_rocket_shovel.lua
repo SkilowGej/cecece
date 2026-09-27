@@ -4,14 +4,14 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-att.PrintName = "Острие Лопаты"
+att.PrintName = "Ostrze łopaty"
 att.Icon = Material("entities/acwatt_ammo_shovel.png")
-att.Description = "Далеко не обычные ракеты."
+att.Description = "To wcale nie są zwykłe rakiety."
 att.Ignore = true
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
-    "- Только прямое попадание",
+    "- Tylko trafienie bezpośrednie",
 }
 att.AutoStats = true
 att.Slot = "ammo_rocket"

@@ -4,14 +4,14 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-att.PrintName = "Оглушающий Режим"
-att.AbbrevName = "Оглушающие Патроны (5 секунд)"
+att.PrintName = "Tryb ogłuszający"
+att.AbbrevName = "Ogłuszające naboje (5 sekund)"
 att.SortOrder = -2
 att.Icon = Material("")
-att.Description = "Оглушающие Патроны."
+att.Description = "Ogłuszające naboje."
 
 att.Desc_Pros = {
-    "Вызывает оглушение на 5 секунд!"
+    "Powoduje ogłuszenie trwające 5 sekund!"
 }
 att.Desc_Cons = {
 }

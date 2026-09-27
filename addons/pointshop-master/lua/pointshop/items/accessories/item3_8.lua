@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Наплечник #5'
+ITEM.Name = 'Naramiennik #5
 ITEM.Price = 75000
 ITEM.Model = 'models/galactic/cosmetics/phase1cosmetics/phase1miscshoulder1.mdl'
 ITEM.Bone = true

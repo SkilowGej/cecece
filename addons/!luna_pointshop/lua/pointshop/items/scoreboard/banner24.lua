@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Клонические Негодники'
+ITEM.Name = 'Klony łotrzyki'
 ITEM.Price = 100000
 ITEM.Material = 'luna_menus/scoreboard/banners/banner24.png'
 ITEM.isBanner = true

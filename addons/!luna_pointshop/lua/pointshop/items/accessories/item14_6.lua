@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Хэллоуинский #6'
+ITEM.Name = 'Halloweenowy #6'
 ITEM.Price = 20000
 ITEM.Model = 'models/galactic/cosmetics/phase1cosmetics/hweenbucket.mdl'
 ITEM.Bone = true

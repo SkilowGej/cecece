@@ -96,7 +96,7 @@ local function handleCase()
         prometheus.PrintError( 'Failed to generate report: %s', name )
     end
 
-    notification.AddLegacy( 'Предотвращено нарушение лимита, проверьте консоль и сообщите администрации.', 1, 6 )
+    notification.AddLegacy( 'Zapobiegnięto przekroczeniu limitu. Sprawdź konsolę i poinformuj administrację.', 1, 6 )
 end
 
 function ClientsideModel( path, ... )

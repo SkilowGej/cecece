@@ -4,9 +4,9 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-att.PrintName = "Полная голография (RDS)"
+att.PrintName = "Pełna holografia (RDS)"
 att.Icon = Material("entities/arccw_fullholo.png", "mips smooth")
-att.Description = "Для тех случаев, когда вам нужно просто большее изображение прицела и меньшее."
+att.Description = "Na wypadek, gdybyście potrzebowali po prostu większego lub mniejszego obrazu celownika."
 
 att.SortOrder = 1
 

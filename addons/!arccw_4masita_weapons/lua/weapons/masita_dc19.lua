@@ -19,7 +19,7 @@ SWEP.PrintName = "DC-19"
 SWEP.Trivia_Class = "Karabin blasterowy"
 SWEP.Trivia_Desc = "Karabin blasterowy DC-15A, zwany również blasterem DC-15S, to model karabinu blasterowego używanego przez Wielką Armię Republiki. Należał on do rodziny DC-15. Pomimo tego, że jest mniejszy od większego karabinu blasterowego DC-15A, oba modele można zaliczyć do karabinów blasterowych. Była to jedna z najpopularniejszych broni wydawanych żołnierzom-klonom podczas Wojen Klonów i była używana w wielu bitwach."
 SWEP.Trivia_Manufacturer = "BlasTech Industries"
-SWEP.Trivia_Calibre = "Газ Тибанна"
+SWEP.Trivia_Calibre = "Gaz Tibanna"
 SWEP.Trivia_Year = 2023
 SWEP.IconOverride = "entities/masita/dc19.png"
 

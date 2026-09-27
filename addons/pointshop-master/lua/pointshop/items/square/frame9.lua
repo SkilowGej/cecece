@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Цезарь'
+ITEM.Name = 'Cezar'
 ITEM.Price = 1000000
 ITEM.Material = 'luna_menus/scoreboard/donate/square9.png'
 

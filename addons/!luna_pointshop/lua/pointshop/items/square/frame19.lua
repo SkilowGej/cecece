@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Леденцы по погоде'
+ITEM.Name = 'Cukierki na pogodę'
 ITEM.Price = 300000
 ITEM.Material = 'luna_menus/scoreboard/donate/square19.png'
 

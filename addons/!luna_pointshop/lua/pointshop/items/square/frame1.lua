@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Весенний Аромат'
+ITEM.Name = 'Wiosenny zapach'
 ITEM.Price = 150000
 ITEM.Material = 'luna_menus/scoreboard/donate/square1.png'
 

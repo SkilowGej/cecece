@@ -4,10 +4,10 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-local Category = "RE.npc • Зомби"
+local Category = "RE.npc • Zombie"
 
 local NPC = { 	
-	Name = "Зомби CT",
+	Name = "Zombie CT",
 	Weapons = { "none" },
 	Class = "npc_dead_ct",
 	Category = Category
@@ -16,7 +16,7 @@ local NPC = {
 list.Set( "NPC", NPC.Class, NPC )
 
 local NPC = { 	
-	Name = "Зомби Snow Trooper",
+	Name = "Zombie Snow Trooper",
 	Weapons = { "none" },
 	Class = "npc_dead_snow",
 	Category = Category
@@ -25,7 +25,7 @@ local NPC = {
 list.Set( "NPC", NPC.Class, NPC )
 
 local NPC = { 	
-	Name = "Зомби Jet",
+	Name = "Zombie Jet",
 	Weapons = { "none" },
 	Class = "npc_dead_jet",
 	Category = Category
@@ -34,7 +34,7 @@ local NPC = {
 list.Set( "NPC", NPC.Class, NPC )
 
 local NPC = { 	
-	Name = "Зомби Medic",
+	Name = "Zombie Medic",
 	Weapons = { "none" },
 	Class = "npc_dead_med",
 	Category = Category
@@ -43,7 +43,7 @@ local NPC = {
 list.Set( "NPC", NPC.Class, NPC )
 
 local NPC = { 	
-	Name = "Зомби Juggernaut",
+	Name = "Zombie Juggernaut",
 	Weapons = { "none" },
 	Class = "npc_dead_jugg",
 	Category = Category
@@ -53,7 +53,7 @@ list.Set( "NPC", NPC.Class, NPC )
 
 
 local NPC = { 	
-	Name = "Зомби Engineer",
+	Name = "Zombie Engineer",
 	Weapons = { "none" },
 	Class = "npc_dead_eng",
 	Category = Category
@@ -62,7 +62,7 @@ local NPC = {
 list.Set( "NPC", NPC.Class, NPC )
 
 local NPC = { 	
-	Name = "Зомби Commander",
+	Name = "Zombie Commander",
 	Weapons = { "none" },
 	Class = "npc_dead_cmd",
 	Category = Category
@@ -71,7 +71,7 @@ local NPC = {
 list.Set( "NPC", NPC.Class, NPC )
 
 local NPC = { 	
-	Name = "Зомби No Helmet",
+	Name = "Zombie No Helmet",
 	Weapons = { "none" },
 	Class = "npc_dead_nohelm",
 	Category = Category
@@ -80,7 +80,7 @@ local NPC = {
 list.Set( "NPC", NPC.Class, NPC )
 
 local NPC = { 	
-	Name = "Зомби Medical Naval",
+	Name = "Zombie Medical Naval",
 	Weapons = { "none" },
 	Class = "npc_dead_nav2",
 	Category = Category
@@ -89,7 +89,7 @@ local NPC = {
 list.Set( "NPC", NPC.Class, NPC )
 
 local NPC = { 	
-	Name = "Зомби Naval",
+	Name = "Zombie Naval",
 	Weapons = { "none" },
 	Class = "npc_dead_nav",
 	Category = Category
@@ -98,7 +98,7 @@ local NPC = {
 list.Set( "NPC", NPC.Class, NPC )
 
 local NPC = { 	
-	Name = "Зомби Scuba Trooper",
+	Name = "Zombie Scuba Trooper",
 	Weapons = { "none" },
 	Class = "npc_dead_scuba",
 	Category = Category

@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Средство Связи'
+ITEM.Name = 'Środek łączności'
 ITEM.Price = 10000
 ITEM.Model = 'models/galactic/cosmetics/phase1cosmetics/mischelm2.mdl'
 ITEM.Bone = true

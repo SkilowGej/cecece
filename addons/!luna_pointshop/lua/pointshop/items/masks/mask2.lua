@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Очки'
+ITEM.Name = 'Okulary'
 ITEM.Price = 150000
 ITEM.Material = 'luna_menus/scoreboard/donate/mask2.png'
 

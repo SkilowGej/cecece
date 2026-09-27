@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Подсумка'
+ITEM.Name = 'Podsumowanie'
 ITEM.Price = 10000
 ITEM.Model = 'models/galactic/cosmetics/phase1cosmetics/sidepouch.mdl'
 ITEM.Bone = true

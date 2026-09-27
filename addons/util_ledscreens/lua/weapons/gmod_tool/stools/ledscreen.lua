@@ -5,7 +5,7 @@
 --ds - matveicher
 
 TOOL.Category		= "Third Party Tools"
-TOOL.Name			= "LED экраны"
+TOOL.Name			= "Ekrany LED"
 TOOL.Command		= nil
 TOOL.ConfigName		= ""
 

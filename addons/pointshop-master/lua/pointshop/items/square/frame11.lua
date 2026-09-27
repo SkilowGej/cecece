@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Киберпранкер'
+ITEM.Name = 'Cyberprankster'
 ITEM.Price = 350000
 ITEM.Material = 'luna_menus/scoreboard/donate/square11.png'
 

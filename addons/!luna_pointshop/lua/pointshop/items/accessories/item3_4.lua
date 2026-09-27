@@ -4,8 +4,8 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Наплечник #3 (Правый)'
-ITEM.Price = 70000
+ITEM.Name = 'Naramiennik #3 (prawy)'
+ITEM.Price = 65000
 ITEM.Model = 'models/galactic/cosmetics/phase1cosmetics/cyber1r.mdl'
 ITEM.Bone = true
 ITEM.Slot = 3

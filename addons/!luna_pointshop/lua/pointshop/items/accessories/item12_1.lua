@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Визор для Шлема'
+ITEM.Name = 'Wizjer do hełmu'
 ITEM.Price = 10000
 ITEM.Model = 'models/galactic/cosmetics/phase1cosmetics/mischelm4.mdl'
 ITEM.Bone = true

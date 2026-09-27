@@ -4,8 +4,8 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-att.PrintName = "Интегральная сошка"
-att.Description = "Опустите сошки, сделав управление более неудобным."
+att.PrintName = "Wspornik integralny"
+att.Description = "Opuść podpórki, co sprawi, że sterowanie stanie się mniej wygodne."
 
 att.SortOrder = 1
 

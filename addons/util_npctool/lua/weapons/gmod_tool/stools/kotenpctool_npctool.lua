@@ -569,7 +569,7 @@ end]]
 	function TOOL.BuildCPanel(pnl)
 		pnl:AddControl("Header", {
 			Text = "Spawner NPC",
-			Description = [[Duży zestaw przydatnych narzędzi do różnorodnych wydarzeń lub działań NPC]]
+			Description = [[Duży zestaw przydatnych narzędzi do różnorodnych wydarzeń i aktywności NPC.]]
 		})
 
 		pnl:AddControl("ComboBox", {
@@ -618,7 +618,8 @@ end]]
 		kotenpctoolshppanel:NumSlider("Mnożnik rozmiaru", "kotenpctool_npctool_npcscale", 0, 6, 2)
 		pnl:AddControl("Header", {
 			Text = "Ustawianie statystyk",
-			Description = [[Jeśli wybrano odpowiednie narzędzie, wystarczy dostosować ustawienia i użyć narzędzia, celując w postać niezależną (NPC). Aktywacja (LPM)]]})
+			Description = [[Jeśli wybrano odpowiednie narzędzie, wystarczy dostosować ustawienia i użyć narzędzia, celując w postać niezależną (NPC). Aktywacja (LPM)]]
+		})
 
 		--ВЫДАЧАУРОНАВЫДАЧАУРОНАВЫДАЧАУРОНАВЫДАЧАУРОНАВЫДАЧАУРОНАВЫДАЧАУРОНАВЫДАЧАУРОНАВЫДАЧАУРОНАВЫДАЧАУРОНАВЫДАЧАУРОНАВЫДАЧАУРОНАВЫДАЧАУРОНАВЫДАЧАУРОНАВЫДАЧАУРОНАВЫДАЧАУРОНАВЫДАЧАУРОНАВЫДАЧАУРОНАВЫДАЧ
 		--ФЛАГИФЛАГИФЛАГИФЛАГИФЛАГИФЛАГИФЛАГИФЛАГИФЛАГИФЛАГИФЛАГИФЛАГИФЛАГИФЛАГИФЛАГИФЛАГИФЛАГИФЛАГИФЛАГИФЛАГИФЛАГИФЛАГИФЛАГИФЛАГИФЛАГИФЛАГИФЛАГИФЛАГИФЛАГИФЛАГИФЛАГИФЛАГИФЛАГИФЛАГИФЛАГИФЛАГИФЛАГИФЛАГИФЛ
@@ -1040,7 +1041,7 @@ end]]
 		------------------NPCСПАВНЕР------------------------------------------------------------------------------------------NPCСПАВНЕР------------------------------------------------------------------------
 		pnl:AddControl("Header", {
 			Text = "Spawner NPC",
-			Description = [[Jeśli wybrano odpowiednie narzędzie, najedź kursorem na punkt, w którym chcesz utworzyć generator NPC. Aktywuj (LPM) Usuń (PPM)]]
+			Description = [[Po wybraniu odpowiedniego narzędzia najedź kursorem na punkt, w którym chcesz utworzyć spawner NPC. Aktywacja (lewy przycisk myszy) Usunięcie (prawy przycisk myszy)]]
 		})
 
 		--СПАВНЕРНПССПАВНЕРНПССПАВНЕРНПССПАВНЕРНПССПАВНЕРНПССПАВНЕРНПССПАВНЕРНПССПАВНЕРНПССПАВНЕРНПССПАВНЕРНПССПАВНЕРНПССПАВНЕРНПССПАВНЕРНПССПАВНЕРНПССПАВНЕРНПССПАВНЕРНПССПАВНЕРНПССПАВНЕРНПССПАВНЕРНПССП
@@ -1139,22 +1140,22 @@ end]]
 
 		pnl:AddControl("Header", {
 			Text = "Patrole",
-			Description = [[Aktywacja (LPM - dodaj/usuń ścieżkę)]]
+			Description = [[Aktywacja (LPM - dodaj/usuń ścieżkę))]]
 		})
 
 		pnl:AddControl("Header", {
 			Text = "Patrole",
-			Description = [[((E+LPM spowoduje wybranie ścieżki) (E+PPM spowoduje anulowanie zadania)]]
+			Description = [[((E+LPM spowoduje wybranie ścieżki) (E+PPM spowoduje anulowanie zadania))]]
 		})
 
 		pnl:AddControl("Header", {
 			Text = "Patrole",
-			Description = [[(PPM - Przydziela NPC zadanie ukończenia ścieżki)]]
+			Description = [[(PPM – Przydziela NPC zadanie ukończenia ścieżki)]]
 		})
 
 		pnl:AddControl("Header", {
 			Text = "Patrole",
-			Description = [[(R - Usuń wszystko)]]
+			Description = [[(R – Usuń wszystko)]]
 		})
 		--ПАТРУЛИПАТРУЛИПАТРУЛИПАТРУЛИПАТРУЛИПАТРУЛИПАТРУЛИПАТРУЛИПАТРУЛИПАТРУЛИПАТРУЛИПАТРУЛИПАТРУЛИПАТРУЛИПАТРУЛИПАТРУЛИПАТРУЛИПАТРУЛИПАТРУЛИПАТРУЛИПАТРУЛИПАТРУЛИПАТРУЛИПАТРУЛИПАТРУЛИПАТРУЛИПАТРУЛИПАТ
 	end
@@ -1201,7 +1202,7 @@ if SERVER then
 
 	function TOOL:LeftClick(tr)
 		if not (self:GetOwner():IsAdmin() or self:GetOwner():IsSuperAdmin()) then
-			print('не суперадмин ващ пне ропходит')
+			print('nie jest pan superadministratorem, to się nie uda')
 			return
 		end
 

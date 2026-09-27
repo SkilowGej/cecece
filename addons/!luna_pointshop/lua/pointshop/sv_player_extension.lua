@@ -57,34 +57,34 @@ function Player:PS_PlayerInitialSpawn()
 		if PS.Config.ShopKey ~= '' then
 			timer.Simple(5, function() -- Give them time to load up
 				if !IsValid(self) then return end
-				self:PS_Notify('Нажмите ' .. PS.Config.ShopKey .. ' для посещения Галактического Маркета!')
+				self:PS_Notify('Kliknij ' .. PS.Config.ShopKey .. ' aby wejść do Galaktycznego Marketu!')
 			end)
 		end
 
 		if PS.Config.ShopCommand ~= '' then
 			timer.Simple(5, function() -- Give them time to load up
 				if !IsValid(self) then return end
-				self:PS_Notify('Напишите ' .. PS.Config.ShopCommand .. ' в консоль для посещения Галактического Маркета!')
+				self:PS_Notify('Napisz ' .. PS.Config.ShopCommand .. ' w konsoli aby wejść do Galaktycznego Marketu!')
 			end)
 		end
 
 		if PS.Config.ShopChatCommand ~= '' then
 			timer.Simple(5, function() -- Give them time to load up
 				if !IsValid(self) then return end
-				self:PS_Notify('Напишите ' .. PS.Config.ShopChatCommand .. ' в чат для посещения Галактического Маркета!')
+				self:PS_Notify('Napisz ' .. PS.Config.ShopChatCommand .. ' na czacie, aby odwiedzić Galaktyczny Rynek!')
 			end)
 		end
 
 		timer.Simple(10, function() -- Give them time to load up
 			if !IsValid(self) then return end
-			self:PS_Notify('У вас ' .. self:PS_GetPoints() .. ' ' .. PS.Config.PointsName .. ' для того, чтобы потратить их в Галактическом Маркете!')
+			self:PS_Notify('Posiadasz ' .. self:PS_GetPoints() .. ' ' .. PS.Config.PointsName .. ' aby wydać je w Galaktycznym Markecie!')
 		end)
 	end
 
 	if PS.Config.CheckVersion and PS.BuildOutdated and self:IsAdmin() then
 		timer.Simple(5, function()
 			if !IsValid(self) then return end
-			self:PS_Notify("Пак лох!")
+			self:PS_Notify("Znowu pech!")
 		end)
 	end
 
@@ -92,7 +92,7 @@ function Player:PS_PlayerInitialSpawn()
 		timer.Create('PS_PointsOverTime_' .. self:UniqueID(), PS.Config.PointsOverTimeDelay * 60, 0, function()
 			if !IsValid(self) then return end
 			self:PS_GivePoints(PS.Config.PointsOverTimeAmount)
-			self:PS_Notify("Галактическая Республика перевела вам на счёт ", PS.Config.PointsOverTimeAmount, " ", PS.Config.PointsName, " для развлечения в Галактическом Маркете!")
+			self:PS_Notify("Galaktyczna Republika przelała na Twoje konto ", PS.Config.PointsOverTimeAmount, " ", PS.Config.PointsName, " aby w Galaktycznym Markecie!")
 		end)
 	end
 end
@@ -249,7 +249,7 @@ function Player:PS_BuyItem(item_id)
 
 	self:PS_TakePoints(points)
 
-	self:PS_Notify('Куплен ', ITEM.Name, ' за ', points, ' ', PS.Config.PointsName)
+	self:PS_Notify('Kupiony ', ITEM.Name, ' za ', points, ' ', PS.Config.PointsName)
 
 	ITEM:OnBuy(self)
 	
@@ -292,7 +292,7 @@ function Player:PS_SellItem(item_id)
 	
 	hook.Call( "PS_ItemSold", nil, self, item_id )
 
-	self:PS_Notify('Продан ', ITEM.Name, ' за ', points, ' ', PS.Config.PointsName)
+	self:PS_Notify('Sprzedany ', ITEM.Name, ' za ', points, ' ', PS.Config.PointsName)
 
 	return self:PS_TakeItem(item_id)
 end
@@ -366,9 +366,9 @@ function Player:PS_EquipItem(item_id)
 				ConCatCats = ConCatCats .. ', ' .. c
 			else
 				if #CATEGORY.SharedCategories ~= 1 then
-					ConCatCats = ConCatCats .. ', и ' .. c
+					ConCatCats = ConCatCats .. ', i ' .. c
 				else
-					ConCatCats = ConCatCats .. ' и ' .. c
+					ConCatCats = ConCatCats .. ' i ' .. c
 				end
 			end
 		end
@@ -382,7 +382,7 @@ function Player:PS_EquipItem(item_id)
 				if SharedCategory == CATEGORY.Name then
 					if Cat.AllowedEquipped > -1 and CATEGORY.AllowedEquipped > -1 then
 						if NumEquipped(self,CatName) + NumEquipped(self,CATEGORY.Name) + 1 > Cat.AllowedEquipped then
-							self:PS_Notify('Только ' .. Cat.AllowedEquipped .. ' предмет'.. (Cat.AllowedEquipped == 1 and '' or 's') ..' можешь быть надет ' .. ConCatCats .. '!')
+							self:PS_Notify('Tylko ' .. Cat.AllowedEquipped .. ' przedmiot'.. (Cat.AllowedEquipped == 1 and '' or 's') ..' można założyć ' .. ConCatCats .. '!')
 							return false
 						end
 					end
@@ -395,7 +395,7 @@ function Player:PS_EquipItem(item_id)
 
 	ITEM:OnEquip(self, self.PS_Items[item_id].Modifiers)
 
-	self:PS_Notify('Надето ', ITEM.Name, '.')
+	self:PS_Notify('Nadane ', ITEM.Name, '.')
 	
 	hook.Call( "PS_ItemUpdated", nil, self, item_id, PS_ITEM_EQUIP )
 
@@ -420,13 +420,13 @@ function Player:PS_HolsterItem(item_id)
 	end
 
 	if not allowed then
-		self:PS_Notify(message or 'Вам нельзя снять это!')
+		self:PS_Notify(message or 'Nie możesz zdejmować tego!')
 		return false
 	end
 
 	ITEM:OnHolster(self)
 
-	self:PS_Notify('Куплено: ', ITEM.Name, '.')
+	self:PS_Notify('Kupiono: ', ITEM.Name, '.')
 	
 	hook.Call( "PS_ItemUpdated", nil, self, item_id, PS_ITEM_HOLSTER )
 

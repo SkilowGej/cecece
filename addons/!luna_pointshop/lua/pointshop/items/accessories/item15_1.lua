@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Шарфик'
+ITEM.Name = 'Szalik'
 ITEM.Price = 200000
 ITEM.Model = 'models/galactic/cosmetics/phase1cosmetics/scarf1.mdl'
 ITEM.Bone = true

@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Мастурбация Анонимно'
+ITEM.Name = 'Masturbacja Anonimowo'
 ITEM.Price = 500000
 ITEM.Material = 'luna_menus/scoreboard/donate/mask4.png'
 

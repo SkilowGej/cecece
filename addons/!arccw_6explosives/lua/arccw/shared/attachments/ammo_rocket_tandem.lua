@@ -4,14 +4,14 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-att.PrintName = "Тандемная Боеголовка"
+att.PrintName = "Głowica bojowa typu tandem"
 att.Icon = Material("entities/acwatt_ammo_rpg7_he.png")
-att.Description = "Зарядить тандемные боеголовки с кумулятивными зарядами, которые наносят отличный урон при прямом попадании, но очень слабый при попадании брызг.."
+att.Description = "Naładuj głowice tandem z ładunkami kumulacyjnymi, które zadają ogromne obrażenia przy trafieniu bezpośrednim, ale bardzo niewielkie przy trafieniu odłamkowym."
 att.Desc_Pros = {
-    "Увеличение урона от прямого попадания"
+    "Zwiększenie obrażeń od trafienia bezpośredniego"
 }
 att.Desc_Cons = {
-    "Плохой урон по радиусу",
+    "Słabe obrażenia w promieniu",
 }
 att.AutoStats = true
 att.Slot = "ammo_rocket"

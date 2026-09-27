@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Хэллуиновское Далекое Далеко'
+ITEM.Name = 'Halloweenowe Daleko Daleko'
 ITEM.Price = 10000000
 ITEM.Material = 'luna_menus/scoreboard/banners/banner27.png'
 ITEM.isBanner = true

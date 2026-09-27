@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Кристально-Чистый'
+ITEM.Name = 'Krystalicznie czysty'
 ITEM.Price = 450000
 ITEM.Material = 'luna_menus/scoreboard/donate/square7.png'
 

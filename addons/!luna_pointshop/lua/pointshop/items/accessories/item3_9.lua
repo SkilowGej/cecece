@@ -4,8 +4,8 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Наплечник #6'
-ITEM.Price = 30000
+ITEM.Name = 'Naramiennik #6'
+ITEM.Price = 75000
 ITEM.Model = 'models/galactic/cosmetics/phase1cosmetics/redshoulder.mdl'
 ITEM.Bone = true
 ITEM.Slot = 3

@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Наплечник #2 (Правый)'
+ITEM.Name = 'Naramiennik nr 2 (prawy)'
 ITEM.Price = 50000
 ITEM.Model = 'models/galactic/cosmetics/phase1cosmetics/capbreaker_arm_r.mdl'
 ITEM.Bone = true

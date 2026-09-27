@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Бакара ведёт!'
+ITEM.Name = 'Bacara prowadzi!'
 ITEM.Price = 130000
 ITEM.Material = 'luna_menus/scoreboard/banners/banner7.png'
 ITEM.isBanner = true

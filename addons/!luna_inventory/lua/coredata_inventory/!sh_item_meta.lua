@@ -73,7 +73,7 @@ function sup_inv.ItemMeta:Use(ply, x, y, limb, target)
     end
 
     if self:IsConsum() then
-        ply:Kick('эта консум)))')
+        ply:Kick('to konsumpcja)))')
         ply:GetInventory():RemoveItem(x, y)
         return true
     end

@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-CATEGORY.Name = 'Интерфейс'
+CATEGORY.Name = 'Interfejs'
 CATEGORY.Icon = 'luna_icons/targeting.png'
 
 

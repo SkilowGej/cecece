@@ -4,8 +4,8 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Нагрудник #7 (Правый)'
-ITEM.Price = 30000
+ITEM.Name = 'Nakładka na klatkę piersiową nr 7 (prawa)'
+ITEM.Price = 50000
 ITEM.Model = 'models/galactic/cosmetics/phase1cosmetics/engineerstrapr.mdl'
 ITEM.Bone = true
 ITEM.Slot = 4

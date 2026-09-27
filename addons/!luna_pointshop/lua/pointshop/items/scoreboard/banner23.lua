@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Дуэль Судеб'
+ITEM.Name = 'Duel of Fates'
 ITEM.Price = 200000
 ITEM.Material = 'luna_menus/scoreboard/banners/banner23.png'
 ITEM.isBanner = true

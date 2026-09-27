@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Маска Многоразовая'
+ITEM.Name = 'Maska wielokrotnego użytku'
 ITEM.Price = 300000
 ITEM.Material = 'luna_menus/scoreboard/donate/mask7.png'
 

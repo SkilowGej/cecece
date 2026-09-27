@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Рыцари Старой Республики'
+ITEM.Name = 'Rycerze Starej Republiki'
 ITEM.Price = 235000
 ITEM.Material = 'luna_menus/scoreboard/banners/banner36.png'
 ITEM.isBanner = true

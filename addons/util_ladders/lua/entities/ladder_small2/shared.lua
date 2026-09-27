@@ -11,7 +11,7 @@ end;
 ENT.Type 			= "anim";
 ENT.Base 			= "ladder_base";
 ENT.PrintName		= "Ladder (Small - Attached)"
-ENT.Category		= "SUP • Лестницы";
+ENT.Category		= "SUP • Drabiny";
 ENT.Spawnable		= true
 ENT.AdminOnly		= false
 ENT.Model			= Model("models/props_c17/metalladder002.mdl");

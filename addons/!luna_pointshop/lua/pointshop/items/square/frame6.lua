@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Картина Репина'
+ITEM.Name = 'Obraz Repina'
 ITEM.Price = 500000
 ITEM.Material = 'luna_menus/scoreboard/donate/square6.png'
 

@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Прилипала Шпилька'
+ITEM.Name = 'Przylepka Szpilka'
 ITEM.Price = 175000
 ITEM.Material = 'luna_menus/scoreboard/banners/banner28.png'
 ITEM.isBanner = true

@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-CATEGORY.Name = 'Баннеры'
+CATEGORY.Name = 'Banery'
 CATEGORY.Icon = 'luna_icons/id-card.png'
 
 

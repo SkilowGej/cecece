@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Любимый Бородач'
+ITEM.Name = 'Ukochany Brodacz'
 ITEM.Price = 140000
 ITEM.Material = 'luna_menus/scoreboard/banners/banner35.png'
 ITEM.isBanner = true

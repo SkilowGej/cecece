@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'За Коуди!'
+ITEM.Name = 'Za Codyego'
 ITEM.Price = 160000
 ITEM.Material = 'luna_menus/scoreboard/banners/banner6.png'
 ITEM.isBanner = true

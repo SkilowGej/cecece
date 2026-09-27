@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Душнила душнил'
+ITEM.Name = 'Duszył duszył'
 ITEM.Price = 240000
 ITEM.Material = 'luna_menus/scoreboard/banners/banner34.png'
 ITEM.isBanner = true

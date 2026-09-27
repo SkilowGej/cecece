@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Нагрудник #16'
+ITEM.Name = 'Nakładka na klatkę piersiową nr 16'
 ITEM.Price = 50000
 ITEM.Model = 'models/galactic/cosmetics/phase1cosmetics/vest1.mdl'
 ITEM.Bone = true

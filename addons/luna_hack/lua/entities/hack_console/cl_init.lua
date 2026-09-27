@@ -175,7 +175,7 @@ function ENT:DrawGUI()
 
             local sec = math.Round(cooldown_time - (CurTime() - failed_time))
 
-            DrawText("Będziesz mógł powtórzyć za: ".. sec .." с.", 0, 100)
+            DrawText("Będziesz mógł powtórzyć za: ".. sec .." s.", 0, 100)
         end
     elseif state == 4 then
         DrawText("Konsola została pomyślnie zhakowana!", 0, 60)
@@ -187,7 +187,7 @@ function ENT:DrawGUI()
 
         local sec = math.Round(cooldown_time - (CurTime() - failed_time))
 
-        DrawText("Będziesz mógł powtórzyć za: ".. sec .." с.", 0, 100)
+        DrawText("Będziesz mógł powtórzyć za: ".. sec .." s.", 0, 100)
 
     elseif state == 404 then
         DrawText("404", 0, 60)

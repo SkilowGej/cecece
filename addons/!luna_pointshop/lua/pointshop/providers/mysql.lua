@@ -36,10 +36,10 @@
 
 -- config, change these to match your setup
 
-local mysql_hostname = '5.42.211.9' -- Your MySQL server address.
-local mysql_username = 'u1_kjCRGSok65' -- Your MySQL username.
-local mysql_password = 'n21H7DH=YIbpYb4v^wF^Aw!d' -- Your MySQL password.
-local mysql_database = 's1_cwrp1' -- Your MySQL database.
+local mysql_hostname = '194.69.160.11' -- Your MySQL server address.
+local mysql_username = 'u11658_jhb2Dawcfp' -- Your MySQL username.
+local mysql_password = 'Rmyccrtgzmci@8hafM3lM2=f' -- Your MySQL password.
+local mysql_database = 's11658_Sklep' -- Your MySQL database.
 local mysql_port = 3306 -- Your MySQL port. Most likely is 3306.
 
 -- end config, don't change anything below unless you know what you're doing

@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Футуризм'
+ITEM.Name = 'Futuryzm'
 ITEM.Price = 900000
 ITEM.Material = 'luna_menus/scoreboard/donate/square20.png'
 

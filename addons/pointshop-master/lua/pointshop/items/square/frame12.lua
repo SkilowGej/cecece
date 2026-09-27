@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Блестки'
+ITEM.Name = 'Błyszczące'
 ITEM.Price = 250000
 ITEM.Material = 'luna_menus/scoreboard/donate/square12.png'
 

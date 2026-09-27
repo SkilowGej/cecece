@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Падение Венатора'
+ITEM.Name = 'Upadek Venatora'
 ITEM.Price = 110000
 ITEM.Material = 'luna_menus/scoreboard/banners/banner8.png'
 ITEM.isBanner = true

@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Маска для аватарки'
+ITEM.Name = 'Maska do awatara'
 ITEM.Price = 1
 ITEM.Material = 'luna_menus/scoreboard/donate/mask3.png'
 

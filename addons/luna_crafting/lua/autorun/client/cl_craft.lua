@@ -163,7 +163,7 @@ net.Receive("kotecraftsystem_opencraftmenu", function()
 		surface.SetMaterial(Material("luna_icons/tinker.png"))
 		surface.SetDrawColor(255, 255, 255, 255)
 		surface.DrawTexturedRect(w * 0.11, h * 0.11, h * 0.08, h * 0.08)
-		draw.ShadowSimpleText("СТАНЦИЯ ПЕРЕРАБОТКИ МАТЕРИАЛА", "font_big_black", w * 0.17, h * 0.15, Color(255, 255, 255, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_CENTER)
+		draw.ShadowSimpleText("STACJA PRZETWARZANIA MATERIAŁÓW", "font_big_black", w * 0.17, h * 0.15, Color(255, 255, 255, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_CENTER)
 		--HEADER-----------
 		--MODELWEAPON--
 		draw.RoundedBox(0, w * 0.51, h * 0.25, h * 0.6, h * 0.6, Color(0, 0, 0, 200))

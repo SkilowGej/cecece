@@ -322,7 +322,7 @@ if CLIENT then
     addprefix('Sieć lokalna', 'Sieć lokalna', Color(255, 153, 0), Color(140, 198, 202))
     addprefix('Holonet', 'Holonet', Color(48, 92, 201), Color(48, 92, 201))
     addprefix('[LS-OT]', 'LS-OT', Color(143, 139, 86), Color(201, 202, 140))
-    addprefix('COMM1', 'Częstotliwość bazy', Color(0, 126, 50), Color(255, 255, 255))
+    addprefix('COMM1', 'Częstotliwość chroniona', Color(0, 126, 50), Color(255, 255, 255))
     addprefix('COMM2', 'Częstotliwość chroniona', Color(37, 123, 180), Color(255, 255, 255))
     addprefix('COMM3', 'Częstotliwość niezabezpieczona', Color(175, 62, 62), Color(255, 255, 255))
 

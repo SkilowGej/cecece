@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Рамочный Аквояж'
+ITEM.Name = 'Rama Aquoyage'
 ITEM.Price = 350000
 ITEM.Material = 'luna_menus/scoreboard/donate/square5.png'
 

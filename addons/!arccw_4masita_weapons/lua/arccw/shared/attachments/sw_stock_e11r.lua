@@ -8,7 +8,7 @@ att.PrintName = "E-11R Kolba"
 att.AbbrevName = "E11-r Stock"
 att.SortOrder = 100
 att.Icon = nil
-att.Description = "Лучший контроль."
+att.Description = "Lepsza kontrola."
 att.Desc_Pros = {}
 att.Desc_Cons = {}
 

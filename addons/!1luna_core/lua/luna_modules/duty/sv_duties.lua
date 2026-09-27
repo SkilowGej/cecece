@@ -136,7 +136,7 @@ end
 local function SendToNextPickup(ply, storage)
 
 	local point
-	local point_name = "Склад"
+	local point_name = "Magazyn"
 	if storage then
 		point = table.Random(DUTIES_CONFIG.storage_points)
 		ChatAddText(ply, Color(17, 148, 240), "Piwnica.duty • ", Color(255, 255, 255), "Idź po następną skrzynkę! ")

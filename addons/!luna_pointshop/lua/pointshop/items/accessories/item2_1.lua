@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Головной Убор #1'
+ITEM.Name = 'Nakrycie głowy #1'
 ITEM.Price = 350000
 ITEM.Model = 'models/galactic/cosmetics/phase1cosmetics/cadbane_hat.mdl'
 ITEM.Bone = true

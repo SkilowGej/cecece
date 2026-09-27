@@ -4,9 +4,9 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-local Category = "SUP • Сепаратисты"
-local Category = "SUP • Разное"
-local Category = "SUP • Разное"
+local Category = "SUP • Separatyści"
+local Category = "SUP • Różne"
+local Category = "SUP • Różne"
 
 list.Add( "NPCUsableWeapons", { class = "tfa_swch_e5",	title = "E5 NPC" }  )
 list.Add( "NPCUsableWeapons", { class = "tfa_swch_e5s",	title = "E5 Sniper NPC" }  )

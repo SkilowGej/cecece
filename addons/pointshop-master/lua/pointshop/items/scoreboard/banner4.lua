@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'В окружении'
+ITEM.Name = 'W otoczeniu'
 ITEM.Price = 110000
 ITEM.Material = 'luna_menus/scoreboard/banners/banner4.png'
 ITEM.isBanner = true

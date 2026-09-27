@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Аристократический Подход'
+ITEM.Name = 'Arystokratyczne podejście'
 ITEM.Price = 950000
 ITEM.Material = 'luna_menus/scoreboard/donate/square10.png'
 

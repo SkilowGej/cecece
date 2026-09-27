@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Братская Сила'
+ITEM.Name = 'Siła braterstwa'
 ITEM.Price = 120000
 ITEM.Material = 'luna_menus/scoreboard/banners/banner1.png'
 ITEM.isBanner = true

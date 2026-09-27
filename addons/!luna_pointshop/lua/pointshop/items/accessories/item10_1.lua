@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Фонарики на шлем'
+ITEM.Name = 'Latarki do kasku'
 ITEM.Price = 10000
 ITEM.Model = 'models/galactic/cosmetics/phase1cosmetics/mischelm1.mdl'
 ITEM.Bone = true

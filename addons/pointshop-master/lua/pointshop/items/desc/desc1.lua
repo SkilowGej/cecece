@@ -4,9 +4,9 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Описание Таблицы Игроков'
+ITEM.Name = 'Opis tabeli graczy'
 ITEM.Price = 500000
-ITEM.Description = 'Описание Игрока'
+ITEM.Description = 'Opis gracza'
 ITEM.Material = 'luna_ui_base/etc/talk.png'
 
 function ITEM:OnBuy(ply)

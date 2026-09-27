@@ -23,10 +23,10 @@ Set PS.Config.DataProvider = "tmysql"
 -- local MySQL_Database = ""
 -- local MySQL_Port = 3306
 
-local MySQL_Host = '127.0.0.1' -- Your MySQL server address.
-local MySQL_User = 'u1_kjCRGSok65' -- Your MySQL username.
-local MySQL_Pass = 'n21H7DH=YIbpYb4v^wF^Aw!d' -- Your MySQL password.
-local MySQL_Database = 's1_cwrp1' -- Your MySQL database.
+local MySQL_Host = '194.69.160.11' -- Your MySQL server address.
+local MySQL_User = 'u11658_gzQwvUe2NK' -- Your MySQL username.
+local MySQL_Pass = '.cfQwEKg@wBcnQKdmSw4rMlw' -- Your MySQL password.
+local MySQL_Database = 's11658_sklep2' -- Your MySQL database.
 local MySQL_Port = 3306 -- Your MySQL port. Most likely is 3306.
 
 -- Do not edit below

@@ -392,7 +392,7 @@ function PANEL:Init()
 
 		self.ClientsList = ClientsList
 
-		createBtn("Центр Администратирования", 'icon16/shield.png', AdminTab, RIGHT)
+		createBtn("Centrum Administracji", 'icon16/shield.png', AdminTab, RIGHT)
 	end
 
 	-- preview panel
@@ -455,7 +455,7 @@ function PANEL:Init()
         givebutton:SetTall(30)
         givebutton.Paint = function( self, w, h )
             draw.RoundedBox(0, 0, 0, w, h, Color(39,147,232))
-            draw.SimpleText('Передать РК', "font_base_18", w/2, h/2, Color( 255, 255, 255, 255 ), 1, 1)
+            draw.SimpleText('Przekaż KR', "font_base_18", w/2, h/2, Color( 255, 255, 255, 255 ), 1, 1)
         end
 		givebutton.DoClick = function()
 			vgui.Create('DPointShopGivePoints')

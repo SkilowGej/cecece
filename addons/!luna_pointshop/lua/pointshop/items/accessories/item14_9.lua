@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Хэллоуинский #9'
+ITEM.Name = 'Halloweenowy #9'
 ITEM.Price = 100000
 ITEM.Model = 'models/galactic/cosmetics/halloween/hw2013_the_caws_of_death.mdl'
 ITEM.Bone = true

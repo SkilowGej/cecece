@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Рамка как Рамка'
+ITEM.Name = 'Ramka jako ramka'
 ITEM.Price = 100000
 ITEM.Material = 'luna_menus/scoreboard/donate/square17.png'
 

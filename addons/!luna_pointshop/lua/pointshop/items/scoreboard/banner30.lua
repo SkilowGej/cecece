@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Пляжный Эпизод'
+ITEM.Name = 'Epizod na plaży'
 ITEM.Price = 240000
 ITEM.Material = 'luna_menus/scoreboard/banners/banner30.png'
 ITEM.isBanner = true

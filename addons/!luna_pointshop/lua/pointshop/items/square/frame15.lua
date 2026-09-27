@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Венок'
+ITEM.Name = 'Wieniec'
 ITEM.Price = 1200000
 ITEM.Material = 'luna_menus/scoreboard/donate/square15.png'
 

@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-CATEGORY.Name = 'Aксессуары'
+CATEGORY.Name = 'Akcesoria'
 CATEGORY.Icon = 'luna_icons/open-treasure-chest.png'
 
 

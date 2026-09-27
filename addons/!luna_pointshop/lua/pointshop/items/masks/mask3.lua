@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Гиперпрыжок'
+ITEM.Name = 'Hiperprzeskok'
 ITEM.Price = 250000
 ITEM.Material = 'luna_menus/scoreboard/donate/mask3.png'
 

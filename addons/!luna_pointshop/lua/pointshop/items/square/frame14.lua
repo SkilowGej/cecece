@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Розы на морозе'
+ITEM.Name = 'Róże na mrozie'
 ITEM.Price = 1500000
 ITEM.Material = 'luna_menus/scoreboard/donate/square14.png'
 

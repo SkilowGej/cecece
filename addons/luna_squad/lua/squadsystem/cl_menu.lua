@@ -664,7 +664,7 @@ function SquadSystem:CreateRadial()
     self.Radial:Center()
     self.Radial:MakePopup()
     self.Radial:SetKeyboardInputEnabled(false)
-    self.Radial:SetTitle('Меню отряда')
+    self.Radial:SetTitle('Menu oddziału')
     self.Radial:SetPrimaryColor(Color(0, 0, 0, 150))
     self.Radial:SetBackgroundColor(Color(0, 0, 0, 100))
     for k, v in pairs(options) do

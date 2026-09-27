@@ -4,9 +4,9 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-att.PrintName = "Прицел HCOG (1.85x)"
+att.PrintName = "Celownik HCOG (1.85x)"
 att.Icon = Material("entities/arccw_hcog.png", "mips smooth")
-att.Description = "Прицел HCOG доступен для большинства основного оружия. Прицел состоит из красного шеврона, окруженного прозрачной рамкой, что обеспечивает пользователю менее затрудненный обзор, чем стандартный железный прицел. Прицел имеет низкий уровень увеличения. "
+att.Description = "Celownik HCOG jest dostępny dla większości broni podstawowej. Celownik składa się z czerwonego krzyża otoczonego przezroczystą ramką, co zapewnia użytkownikowi mniej ograniczone pole widzenia niż w przypadku standardowego celownika metalowego. Celownik charakteryzuje się niskim powiększeniem. "
 
 att.SortOrder = 4
 

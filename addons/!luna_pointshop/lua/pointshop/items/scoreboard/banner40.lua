@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Бандосы'
+ITEM.Name = 'Bandy'
 ITEM.Price = 300000
 ITEM.Material = 'luna_menus/scoreboard/banners/banner40.png'
 ITEM.isBanner = true

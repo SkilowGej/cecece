@@ -63,7 +63,7 @@ COMMANDS['stopsound'] = 0
 -- controls model detail, -2 being the highest and 2 being the lowest
 COMMANDS['r_rootlod'] = prometheus.cfg.modelLevelDetails -- 1 - breaks cars
 COMMANDS['r_decals'] = 400
-COMMANDS['mp_decals'] = 400
+-- COMMANDS['mp_decals'] = 400
 -- 0 - disables a lot of map decals
 COMMANDS['r_renderoverlayfragment'] = 1 // # Rendering of multiple Texturelayers on(1)/off(0)
 COMMANDS['r_drawmodeldecals'] = 1 -- draw decals on props and etc.
@@ -76,7 +76,7 @@ COMMANDS['cl_ejectbrass'] = 0 -- disable ammo shells
 COMMANDS['r_drawflecks'] = 0 -- particles when you shoot wall and etc. (can also impact face mimics???)
 COMMANDS['r_decal_cullsize'] = 1 -- Decals under this size in pixels are culled
 COMMANDS['r_eyemove'] = 0
-COMMANDS['r_teeth'] = 1
+-- COMMANDS['r_teeth'] = 1
 COMMANDS['r_eyes'] = 1
 COMMANDS['r_waterforceexpensive'] = 0
 COMMANDS['r_waterforcereflectentities'] = 0
@@ -120,7 +120,7 @@ COMMANDS['r_threaded_particles'] = 1
 Memory
 --------------------------------]]
 COMMANDS['datacachesize'] = 256
-COMMANDS['mem_max_heapsize'] = 1024
+-- COMMANDS['mem_max_heapsize'] = 1024
 COMMANDS['mem_min_heapsize'] = 96
 
 --[[------------------------------

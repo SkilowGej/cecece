@@ -16,22 +16,22 @@ return {
 	--
 	-- MySQL host/ip
 	--
-	Host = "194.69.160.11",
+	Host = "localhost",
 
 	--
 	-- MySQL username
 	--
-	Username = "u11658_kIs5fRNFP5",
+	Username = "root",
 
 	--
 	-- MySQL password
 	--
-	Password = "qmU@XNhxM0lA8X+xAF=9Q+L6",
+	Password = "",
 
 	--
 	-- MySQL database
 	--
-	Database = "s11658_SAM_ADMIN",
+	Database = "piwnicagranie_swrp_sam",
 }
 
 --leak by matveicher

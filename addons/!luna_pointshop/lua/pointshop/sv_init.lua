@@ -57,10 +57,10 @@ net.Receive('PS_SendPoints', function(length, ply)
 	end
 
 	ply:PS_TakePoints(points)
-	ply:PS_Notify("Вы выдали ", other:Nick(), " ", points, " игроку ", PS.Config.PointsName, ".")
+	ply:PS_Notify("Ty wydałeś ", other:Nick(), " ", points, " graczowi ", PS.Config.PointsName, ".")
 		
 	other:PS_GivePoints(points)
-	other:PS_Notify(ply:Nick(), " выдал вам ", points, " из своих ", PS.Config.PointsName, ".")
+	other:PS_Notify(ply:Nick(), " wydał Ci ", points, " z Twoich ", PS.Config.PointsName, ".")
 
 	ply.PS_LastGavePoints = CurTime()
 end)
@@ -78,7 +78,7 @@ net.Receive('PS_GivePoints', function(length, ply)
 	
 	if (admin_allowed or super_admin_allowed) and other and points and IsValid(other) and other:IsPlayer() then
 		other:PS_GivePoints(points)
-		other:PS_Notify(ply:Nick(), ' выдал вам ', points, ' ', PS.Config.PointsName, '.')
+		other:PS_Notify(ply:Nick(), ' wydał ci ', points, ' ', PS.Config.PointsName, '.')
 	end
 end)
 
@@ -93,7 +93,7 @@ net.Receive('PS_TakePoints', function(length, ply)
 	
 	if (admin_allowed or super_admin_allowed) and other and points and IsValid(other) and other:IsPlayer() then
 		other:PS_TakePoints(points)
-		other:PS_Notify(ply:Nick(), ' забрал ', points, ' ', PS.Config.PointsName, ' у вас.')
+		other:PS_Notify(ply:Nick(), ' zabrał ', points, ' ', PS.Config.PointsName, ' u ciebie.')
 	end
 end)
 
@@ -108,7 +108,7 @@ net.Receive('PS_SetPoints', function(length, ply)
 	
 	if (admin_allowed or super_admin_allowed) and other and points and IsValid(other) and other:IsPlayer() then
 		other:PS_SetPoints(points)
-		other:PS_Notify(ply:Nick(), ' выставил вам ', PS.Config.PointsName, ' в кол-ве ', points, '.')
+		other:PS_Notify(ply:Nick(), ' wykazał Ci ', PS.Config.PointsName, ' w ilości ', points, '.')
 	end
 end)
 

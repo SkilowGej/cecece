@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Нож Городской Расцветки'
+ITEM.Name = 'Nóż miejski w kolorach'
 ITEM.Price = 460000
 ITEM.Model = 'models/gaminglight/vibroknives/w_vibroknife.mdl'
 ITEM.WeaponClass = 'vibrokinfe_digital'

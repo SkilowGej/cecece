@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Закрыть глаз'
+ITEM.Name = 'Zamknąć oczy'
 ITEM.Price = 5000
 ITEM.Model = 'models/galactic/cosmetics/phase1cosmetics/lefteye1.mdl'
 ITEM.Bone = true

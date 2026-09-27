@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Мечто Манго Макса'
+ITEM.Name = 'Marzenie Mango Maxa'
 ITEM.Price = 90000
 ITEM.Material = 'luna_menus/scoreboard/donate/mask5.png'
 

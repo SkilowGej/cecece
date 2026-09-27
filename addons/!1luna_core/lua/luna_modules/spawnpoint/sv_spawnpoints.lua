@@ -351,7 +351,7 @@ net.Receive("SpawnPoints:UpdateSpawn", function(len, ply)
 
 	SPAWNS.UpdatePriority(id, spawn_tbl.prio)
 	SPAWNS.UpdateTeams(id, spawn_tbl.jobs)
-	ply:ChatPrint("Данные спавна "..id.." успешно обновлены!")
+	ply:ChatPrint("Dane dotyczące spawnów "..id.." zostały pomyślnie zaktualizowane!")
 end)
 
 net.Receive("SpawnPoints:DeleteSpawn", function(len, ply)

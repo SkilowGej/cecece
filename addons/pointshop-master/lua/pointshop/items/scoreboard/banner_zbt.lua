@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Закрытый Тестировщик'
+ITEM.Name = 'Zamknięty tester'
 ITEM.Price = 133700
 ITEM.Material = 'luna_menus/scoreboard/banners/zbt_banner.png'
 ITEM.isBanner = true

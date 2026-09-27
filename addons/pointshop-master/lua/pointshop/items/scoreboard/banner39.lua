@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Скайрокер'
+ITEM.Name = 'Skyrocker'
 ITEM.Price = 245000
 ITEM.Material = 'luna_menus/scoreboard/banners/banner39.png'
 ITEM.isBanner = true

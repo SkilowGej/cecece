@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Спецназ в действии'
+ITEM.Name = 'Specjalne siły w akcji'
 ITEM.Price = 100000
 ITEM.Material = 'luna_menus/scoreboard/banners/banner20.png'
 ITEM.isBanner = true

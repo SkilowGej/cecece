@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Рюкзак #3'
+ITEM.Name = 'Plecak #3'
 ITEM.Price = 120000
 ITEM.Model = 'models/galactic/cosmetics/phase1cosmetics/csgoback2.mdl'
 ITEM.Bone = true

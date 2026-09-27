@@ -34,7 +34,7 @@ local function previewBanner( matPath )
 	fr = vgui.Create( 'DFrame' )
 	fr:SetSize( ResponsiveX(580), ResponsiveY(120) )
 	fr:Center()
-	fr:SetTitle('Осмотр баннера')
+	fr:SetTitle('Oględziny banera')
 	fr:MakePopup()
 
 	local banner = fr:Add( 'Panel' )
@@ -51,23 +51,23 @@ function PANEL:DoClick()
 	local points = PS.Config.CalculateBuyPrice(LocalPlayer(), self.Data)
 
 	if not LocalPlayer():PS_HasItem(self.Data.ID) and not LocalPlayer():PS_HasPoints(points) then
-		notification.AddLegacy("Вам не хватает "..PS.Config.PointsName.." на это!", NOTIFY_GENERIC, 5)
+		notification.AddLegacy("Brakuje Ci "..PS.Config.PointsName.." na to!", NOTIFY_GENERIC, 5)
 	end
 
 	local menu = DermaMenu(self)
 
 	if LocalPlayer():PS_HasItem(self.Data.ID) then
-		menu:AddOption('Продать', function()
-			Derma_Query('Вы уверены в том, что хотите продать ' .. self.Data.Name .. '?', 'Продажа',
-				'Да', function() LocalPlayer():PS_SellItem(self.Data.ID) end,
-				'Нет', function() end
+		menu:AddOption('Sprzedaj', function()
+			Derma_Query('Jesteś pewien, że chcesz sprzedać ' .. self.Data.Name .. '?', 'Sprzedaż',
+				'Tak', function() LocalPlayer():PS_SellItem(self.Data.ID) end,
+				'Nie', function() end
 			)
 		end)
 	elseif LocalPlayer():PS_HasPoints(points) then
-		menu:AddOption('Купить', function()
-			Derma_Query('Вы уверены в том, что хотите купить ' .. self.Data.Name .. '?', 'Продажа',
-				'Да', function() LocalPlayer():PS_BuyItem(self.Data.ID) end,
-				'Нет', function() end
+		menu:AddOption('Kup', function()
+			Derma_Query('Jesteś pewien, że chcesz kupić ' .. self.Data.Name .. '?', 'Kupno',
+				'Tak', function() LocalPlayer():PS_BuyItem(self.Data.ID) end,
+				'Nie', function() end
 			)
 		end)
 	end
@@ -77,11 +77,11 @@ function PANEL:DoClick()
 		menu:AddSpacer()
 
 		if LocalPlayer():PS_HasItemEquipped(self.Data.ID) then
-			menu:AddOption('Снять', function()
+			menu:AddOption('Zdejmij', function()
 				LocalPlayer():PS_HolsterItem(self.Data.ID)
 			end)
 		else
-			menu:AddOption('Одеть', function()
+			menu:AddOption('Odłóż', function()
 				LocalPlayer():PS_EquipItem(self.Data.ID)
 			end)
 		end
@@ -89,7 +89,7 @@ function PANEL:DoClick()
 		if self.Data.isBanner then
 			menu:AddSpacer()
 
-			menu:AddOption('Осмотреть', function()
+			menu:AddOption('Obejrzyj', function()
 				previewBanner( self.Data.Material )
 			end)
 		end
@@ -97,7 +97,7 @@ function PANEL:DoClick()
 		if LocalPlayer():PS_HasItemEquipped(self.Data.ID) and self.Data.Modify then
 			menu:AddSpacer()
 
-			menu:AddOption('Модифицировать...', function()
+			menu:AddOption('Modyfikuj...', function()
 				PS.Items[self.Data.ID]:Modify(LocalPlayer().PS_Items[self.Data.ID].Modifiers)
 			end)
 		end

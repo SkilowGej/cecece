@@ -4,11 +4,11 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Дюростальный Нож'
+ITEM.Name = 'Nóż z duraluminium'
 ITEM.Price = 360000
 ITEM.Model = 'models/gaminglight/vibroknives/w_vibroknife.mdl'
 ITEM.WeaponClass = 'vibrokinfe_disarray'
-ITEM.Material = 'luna_icons/knife-thrust.png'
+ITEM.Material = 'luna_menus/scoreboard/banners/banner12.png'
 -- ITEM.SingleUse = false
 
 function ITEM:OnBuy(ply)

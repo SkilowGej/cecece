@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Квадрум'
+ITEM.Name = 'Kwadrum'
 ITEM.Price = 150000
 ITEM.Material = 'luna_menus/scoreboard/donate/square16.png'
 

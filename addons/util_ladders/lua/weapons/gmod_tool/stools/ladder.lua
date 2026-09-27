@@ -7,7 +7,7 @@
 AddCSLuaFile();
 
 TOOL.Category		= "Third Party Tools"
-TOOL.Name = "Лестницы"
+TOOL.Name = "Drabiny"
 TOOL.ClientConVar["laddername"] = "";
 TOOL.ClientConVar["model"] = "models/props_c17/metalladder001.mdl";
 TOOL.Information = {

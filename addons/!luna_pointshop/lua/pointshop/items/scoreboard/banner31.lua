@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = '212-й на отдыхе'
+ITEM.Name = '212. na urlopie'
 ITEM.Price = 160000
 ITEM.Material = 'luna_menus/scoreboard/banners/banner31.png'
 ITEM.isBanner = true

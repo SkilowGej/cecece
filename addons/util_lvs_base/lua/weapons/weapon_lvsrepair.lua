@@ -90,7 +90,7 @@ function SWEP:FindClosest()
 end
 
 if CLIENT then
-	SWEP.PrintName		= "Palnik Fuzyjny"
+	SWEP.PrintName		= "Przecinarka Fuzyjna"
 	SWEP.Author			= "Blu-x92"
 
 	SWEP.Slot				= 5
@@ -186,7 +186,7 @@ if CLIENT then
 			local Pos = ply:GetEyeTrace().HitPos
 
 			if IsValid( lvsEnt ) and (Pos - ply:GetShootPos()):Length() < self.MaxRange and not ply:InVehicle() then
-				DrawText( ply:GetEyeTrace().HitPos, "Sprzęt\nZdrowie: "..math.Round(lvsEnt:GetHP()).."/"..lvsEnt:GetMaxHP(), ColorText )
+				DrawText( ply:GetEyeTrace().HitPos, "Pojazd\nZdrowie: "..math.Round(lvsEnt:GetHP()).."/"..lvsEnt:GetMaxHP(), ColorText )
 			end
 
 			return
@@ -205,12 +205,12 @@ if CLIENT then
 				render.DrawBox( boxOrigin, boxAngles, boxMins, boxMaxs, ColorSelect )
 			cam.End3D()
 
-			DrawText( Target:LocalToWorld( (boxMins + boxMaxs) * 0.5 ), (Target:GetIgnoreForce() / 100).."мм "..Target:GetLabel().."\nZdrowie: "..math.Round(Target:GetHP()).."/"..Target:GetMaxHP(), ColorText )
+			DrawText( Target:LocalToWorld( (boxMins + boxMaxs) * 0.5 ), (Target:GetIgnoreForce() / 100).."mm "..Target:GetLabel().."\nZdrowie: "..math.Round(Target:GetHP()).."/"..Target:GetMaxHP(), ColorText )
 		else
 			local Pos = ply:GetEyeTrace().HitPos
 
 			if IsValid( self:GetLVS() ) and (Pos - ply:GetShootPos()):Length() < self.MaxRange and not ply:InVehicle() then
-				DrawText( Pos, "Brak rezerwacji", ColorText )
+				DrawText( Pos, "Brak pancerza", ColorText )
 			end
 		end
 	end

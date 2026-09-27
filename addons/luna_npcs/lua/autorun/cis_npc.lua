@@ -44,7 +44,7 @@ list.Set( "NPC", "npc_valley_aquade", NPC )
 
 
 local NPC = {
-	Name = "Дроид B1",
+	Name = "Droid B1",
 	Class = "npc_combine_s",
 	Category = "SUP • Separatyści",
 	Health = "250",
@@ -53,7 +53,7 @@ local NPC = {
 list.Set( "NPC", "npc_droid_cis_b1_h", NPC )
 
 local NPC = {
-	Name = "Дроид B1 Джеонозис (Мирный)",
+	Name = "Droid B1 Geonosis (Pokojowy)",
 	Class = "npc_citizen",
 	Category = "SUP • Separatyści",
 	Health = "250",
@@ -64,7 +64,7 @@ list.Set( "NPC", "npc_droid_cis_b1_geo_f", NPC )
 
 
 local NPC = {
-	Name = "Дроид B1 Джеонозис",
+	Name = "Droid B1 Geonosis",
 	Class = "npc_combine_s",
 	Category = "SUP • Separatyści",
 	Health = "250",
@@ -73,7 +73,7 @@ local NPC = {
 list.Set( "NPC", "npc_droid_cis_b1_geo_h", NPC )
 
 local NPC = {
-	Name = "Дроид B1 OOM (Мирный)",
+	Name = "Droid B1 OOM (Pokojowy)",
 	Class = "npc_citizen",
 	Category = "SUP • Separatyści",
 	Health = "250",
@@ -84,7 +84,7 @@ list.Set( "NPC", "npc_droid_cis_b1_geo_co_f", NPC )
 
 
 local NPC = {
-	Name = "Дроид B1 OOM",
+	Name = "Droid B1 OOM",
 	Class = "npc_combine_s",
 	Category = "SUP • Separatyści",
 	Health = "250",
@@ -93,7 +93,7 @@ local NPC = {
 list.Set( "NPC", "npc_droid_cis_b1_geo_co_h", NPC )
 
 local NPC = {
-	Name = "Клон",
+	Name = "Klon",
 	Class = "npc_citizen",
 	Category = "SUP • Separatyści",
 	Health = "250",
@@ -104,7 +104,7 @@ list.Set( "NPC", "npc_droid_b2_pvt_f", NPC )
 
 
 local NPC = {
-	Name = "Дроид B2",
+	Name = "Droid B2",
 	Class = "npc_combine_s",
 	Category = "SUP • Separatyści",
 	Health = "250",
@@ -113,7 +113,7 @@ local NPC = {
 list.Set( "NPC", "npc_droid_b2_pvt_h", NPC )
 
 local NPC = {
-	Name = "Каттер",
+	Name = "Nóż tnący",
 	Class = "npc_manhack",
 	Category = "SUP • Separatyści",
 	Model = "models/aussiwozzi/cutter_droid.mdl",

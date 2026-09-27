@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Служить рады!'
+ITEM.Name = 'Z przyjemnością służymy pomocą!'
 ITEM.Price = 135000
 ITEM.Material = 'luna_menus/scoreboard/banners/banner25.png'
 ITEM.isBanner = true

@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Мура'
+ITEM.Name = 'Mura'
 ITEM.Price = 350000
 ITEM.Material = 'luna_menus/scoreboard/donate/square3.png'
 

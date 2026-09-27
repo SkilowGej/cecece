@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Головной Убор #2 (Левый)'
+ITEM.Name = 'Nakrycie głowy #2 (lewe)'
 ITEM.Price = 75000
 ITEM.Model = 'models/galactic/cosmetics/phase1cosmetics/cyber2l.mdl'
 ITEM.Bone = true

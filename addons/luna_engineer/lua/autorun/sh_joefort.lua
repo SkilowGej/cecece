@@ -239,14 +239,14 @@ JoeFort:AddEnt("Droid Medyczny","Szczególne",{
     model = "models/battleground/droids/fx7_medical_droid.mdl",
     health = 30000,
     buildtime = 20,
-    neededresources = 800,
+    neededresources = 500,
 })
 JoeFort:AddEnt("Stacja wydania amunicji","Szczególne",{
     classname = "lvs_ammo_repair",
     model = "models/battleground/droids/gonk_droid.mdl",
     health = 30000,
     buildtime = 20,
-    neededresources = 1000,
+    neededresources = 500,
 })
 
 JoeFort:AddEnt("Przeciwpiechotne","Szczególne",{
@@ -262,7 +262,7 @@ JoeFort:AddEnt("Platforma artyleryjska","Szczególne",{
     model = "models/ordoredactus/platforms/gun_platform_artillery.mdl",
     health = 2000,
     buildtime = 50,
-    neededresources = 2500,
+    neededresources = 3500,
 })
 JoeFort:AddEnt("obrona przeciwlotnicza","Szczególne",{
     classname = "lvs_turret_aa",

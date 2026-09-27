@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Глухая Оборона'
+ITEM.Name = 'Głucha obrona'
 ITEM.Price = 85000
 ITEM.Material = 'luna_menus/scoreboard/banners/banner17.png'
 ITEM.isBanner = true

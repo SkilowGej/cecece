@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-CATEGORY.Name = 'Скины'
+CATEGORY.Name = 'Skórki'
 CATEGORY.Icon = 'luna_icons/ak47u.png'
 
 

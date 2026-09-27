@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Хэллоуинский #11'
+ITEM.Name = 'Halloweenowy #11'
 ITEM.Price = 130000
 ITEM.Model = 'models/galactic/cosmetics/halloween/hw2013_the_crit_wizard.mdl'
 ITEM.Bone = true

@@ -4,7 +4,7 @@
 --ds server - https://discord.gg/7XaRzQSZ45
 --ds - matveicher
 
-ITEM.Name = 'Сила - в единстве!'
+ITEM.Name = 'Siła tkwi w jedności!'
 ITEM.Price = 220000
 ITEM.Material = 'luna_menus/scoreboard/banners/banner32.png'
 ITEM.isBanner = true
