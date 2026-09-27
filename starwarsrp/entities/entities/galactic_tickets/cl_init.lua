@@ -20,7 +20,7 @@ function ENT:Draw()
 				draw.Icon(icon_size*-.6,icon_size*-.5-80,icon_size,icon_size,mat_wep1,color_white)
 				draw.ShadowSimpleText( 'Oficer Gustman', luna.NPC1, -3, 0, Color(17, 148, 240), TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP, 1, Color(0, 0, 0, 255))
 				draw.ShadowSimpleText( 'Oficer Gustman', luna.NPC1Neon, -3, 0, Color(17, 148, 240), TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP, 1, Color(0, 0, 0, 255))
-				draw.ShadowSimpleText( 'Nadzoruje logistykę Armii Sektorowej', luna.NPC2, -3, 70, color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP, 1, Color(0, 0, 0, 255))
+				draw.ShadowSimpleText( 'Odpowiada za logistykę Armii Sektorowej', luna.NPC2, -3, 70, color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP, 1, Color(0, 0, 0, 255))
                 --draw.ShadowSimpleText( self:GetUses() .. '/30', luna.NPC2, -3, 110, color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP, 1, Color(0, 0, 0, 255))
 			render.PopFilterMin()
 		cam.End3D2D()
@@ -123,7 +123,7 @@ net.Receive( 'Tickets:Menu', function()
 		-- draw.SimpleText( 'ЛОГИСТИЧЕСКИЙ ДАТА-ЦЕНТР', 'tickets.1', headerH, scale(15), col.white, 0, 3 )
 		draw.markupText({
             text = {
-                {text = 'CENTRUM LOGISTYCZNE — ', font = 'tickets.1', color = {r = 255, g = 255, b = 255}},
+                {text = 'LOGISTYCZNE CENTRUM DANYCH — ', font = 'tickets.1', color = {r = 255, g = 255, b = 255}},
                 {text = tickets, font = 'tickets.1', color = {r = 255, g = 215, b = 0}}
             },
             x = headerH,
@@ -232,7 +232,7 @@ net.Receive( 'Tickets:Menu', function()
 				for feature, data in pairs(VEHICLES_FEATURES) do
 					for class, veh in pairs(data) do
 
-						local price = string.Comma( veh.gmapPrice ).. 'T'
+						local price = string.Comma( veh.gmapPrice ).. 'Т'
 
 						local item = scroll:Add( 'DButton' )
 						item:Dock(TOP)

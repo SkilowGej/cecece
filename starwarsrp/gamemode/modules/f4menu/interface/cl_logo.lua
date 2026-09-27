@@ -9,7 +9,7 @@ end
 
 function PANEL:Paint( w, h )
     draw.Image( 0, 0, h, h, cfg.mats.logo, cfg.colors.white )
-    draw.SimpleText( 'SUP • Community', 'gm.2', h + scale(20), h*.5, cfg.colors.white, 0, 1 )
+    draw.SimpleText( 'PIWNICA GRANIE', 'gm.2', h + scale(20), h*.5, cfg.colors.white, 0, 1 )
 end
 
 vgui.Register( 'gm.logo', PANEL, 'EditablePanel' )

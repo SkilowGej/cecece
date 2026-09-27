@@ -27,9 +27,9 @@ net.Receive("VotingPlugin", function(len, ply)
         local voteDuration = net.ReadUInt(32)
 
         -- Well, this is not the best way to do this, but it works, if you not lazy, you can make it better
-        if voteResponseType == "Оценка" then
+        if voteResponseType == "Ocena" then
             voteResponseType = "Rating"
-        elseif voteResponseType == "Множественный выбор" then
+        elseif voteResponseType == "Wybór wielokrotny" then
             voteResponseType = "Multiple Choice"
         end
 
@@ -71,7 +71,7 @@ net.Receive("VotingPlugin", function(len, ply)
         if not vote then return end
 
         if os.time() > vote.endTime then
-            ply:ChatPrint("Период голосования для этого опроса закончился.")
+            ply:ChatPrint("Okres głosowania w tej ankiecie dobiegł końca.")
             return
         end
 

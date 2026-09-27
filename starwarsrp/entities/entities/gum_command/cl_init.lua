@@ -29,7 +29,7 @@ function ENT:Draw()
                         draw.SimpleText(str, luna.MontBase84, w/2, 470 + (i*80), Color( 255, 255, 255, 255 ), 1, 1)
                     end
                 else
-                    draw.SimpleText('Nie zajęte', luna.MontBase84, w/2, 300, Color( 65, 255, 65, 255 ), 1, 1)
+                    draw.SimpleText('Wolne', luna.MontBase84, w/2, 300, Color( 65, 255, 65, 255 ), 1, 1)
                 end
             end
 
@@ -163,7 +163,7 @@ netstream.Hook("GUMCommand_OpenMenu", function(ent)
             Clean:SetPos( Menu:GetWide()*.5-Clean:GetWide()*.5, Menu:GetTall()*.5-Clean:GetTall()*.5+100 )
             Clean.Paint = function( self, w, h )
                 draw.RoundedBox(4, 0, 0, w, h, Color(0, 0, 0, 100))
-                draw.SimpleText('Zwolnij', luna.MontBase22, w/2, h/2, Color( 255, 255, 255, 255 ), 1, 1)
+                draw.SimpleText('Zwolnić', luna.MontBase22, w/2, h/2, Color( 255, 255, 255, 255 ), 1, 1)
             end
         
             Clean.DoClick = function( self )

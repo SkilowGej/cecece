@@ -5,8 +5,8 @@ TOOL.ConfigName = ""
 
 if CLIENT then
 	language.Add("tool.namer.name", "Namer")
-	language.Add("tool.namer.0", "ЛКМ - назвать объект, ПКМ - Убрать название")
-	language.Add("tool.namer.desc", "Используется чтобы помечать объекты")
+	language.Add("tool.namer.0", "LKM – nadaj nazwę obiektowi, PKM – usuń nazwę")
+	language.Add("tool.namer.desc", "Służy do oznaczania obiektów")
 end
 
 TOOL.ClientConVar["printName"] = "Beatufil Name"

@@ -267,9 +267,5 @@ re.maplist = {
 	["gm_warmap_v5"] = "105630061",
 	["rp_coruscantbelow"] = "2114506770",
 	["rp_utapau_un"] = "3167140953",
-	["rp_nar_shaddaa_v2"] = "485317056",
-	["rp_arquitens_bana_shiponly"] = "3622675687",
-	["rp_arquitens_bana"] = "3622448623",
-	["rp_arcanatura"] = "3505894921",
-	["gm_kashyyyk_slavercamp"] = "2222910384"
+	["rp_nar_shaddaa_v2"] = "485317056"
 }

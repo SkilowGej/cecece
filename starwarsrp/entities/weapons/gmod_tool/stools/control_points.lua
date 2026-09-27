@@ -108,24 +108,24 @@ end
 
 local ConVarsDefault = TOOL:BuildConVarList()
 function TOOL.BuildCPanel( CPanel )
-    CPanel:AddControl( "Header", { Description = "ЛКМ - Поставить точку захвата\nПКМ - удалить\nR - Изменить на текущие настройки" } )
+    CPanel:AddControl( "Header", { Description = "LKM – ustaw punkt kontrolny\nPPM – usuń\nR – przywróć bieżące ustawienia" } )
     CPanel:AddControl( "ComboBox", { MenuButton = 1, Folder = "rc_controlpoints", Options = { [ "#preset.default" ] = ConVarsDefault }, CVars = table.GetKeys( ConVarsDefault ) } )
 
-    local combo = CPanel:ComboBox("Иконка", "control_points_icon")
+    local combo = CPanel:ComboBox("Ikona", "control_points_icon")
     for name, mat in pairs(CONTROLPOINT_ICONS) do
 		combo:AddChoice( name )
 	end
-    local combo = CPanel:ComboBox("Фракция", "control_points_team")
+    local combo = CPanel:ComboBox("Frakcja", "control_points_team")
     for _, frac in pairs(CONTROLPOINT_TEAMS) do
 		combo:AddChoice( frac.name )
 	end
-    CPanel:TextEntry('Название', 'control_points_name')
-    CPanel:AddControl( "Slider", { Label = "Радиус", Type = "Float", Command = "control_points_radius", Min = 100, Max = 2000 } )
-    CPanel:AddControl( "Slider", { Label = "Бафф времени захвата", Type = "Float", Command = "control_points_time", Min = 1, Max = 60 } )
-    CPanel:AddControl( "Slider", { Label = "Процент окупирования", Type = "Float", Command = "control_points_occupied", Min = 1, Max = 100 } )
-    CPanel:AddControl( "CheckBox", { Label = "Ускорять когда игроков больше", Command = "control_points_countbuff" } )
-    CPanel:AddControl( "Header", { Description = "Разрешить окупировать когда игроков противоположеной фракции больше.\nЕсли выключено, то только когда на точке нету ни одного врага." } )
-    CPanel:AddControl( "CheckBox", { Label = "Окупировать только когда больше", Command = "control_points_countoccupied" } )
-    CPanel:AddControl( "Header", { Description = "Добавляет нейтральный режим как в классическом BF II (Прежде чем сторона отобьет точку, ей нужно будет снять сначала захват фракции, а после нейтралитет)" } )
-    CPanel:AddControl( "CheckBox", { Label = "Моментальная смена стороны", Command = "control_points_momentoccupied" } )
+    CPanel:TextEntry('Tytuł', 'control_points_name')
+    CPanel:AddControl( "Slider", { Label = "Promień", Type = "Float", Command = "control_points_radius", Min = 100, Max = 2000 } )
+    CPanel:AddControl( "Slider", { Label = "Bonus do czasu przechwycenia", Type = "Float", Command = "control_points_time", Min = 1, Max = 60 } )
+    CPanel:AddControl( "Slider", { Label = "Wskaźnik zwrotu z inwestycji", Type = "Float", Command = "control_points_occupied", Min = 1, Max = 100 } )
+    CPanel:AddControl( "CheckBox", { Label = "Przyspieszać, gdy jest więcej graczy", Command = "control_points_countbuff" } )
+    CPanel:AddControl( "Header", { Description = "Zezwól na zajęcie punktu, gdy graczy z przeciwnej frakcji jest więcej.\nJeśli opcja jest wyłączona, to tylko wtedy, gdy na punkcie nie ma ani jednego wroga." } )
+    CPanel:AddControl( "CheckBox", { Label = "Zajmować tylko wtedy, gdy jest więcej", Command = "control_points_countoccupied" } )
+    CPanel:AddControl( "Header", { Description = "Dodaje tryb neutralny, tak jak w klasycznej wersji BF II (zanim strona zdobędzie punkt, będzie musiała najpierw przejąć kontrolę nad frakcją, a dopiero potem uzyskać neutralność)" } )
+    CPanel:AddControl( "CheckBox", { Label = "Natychmiastowa zmiana strony", Command = "control_points_momentoccupied" } )
 end

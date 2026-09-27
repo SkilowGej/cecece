@@ -440,9 +440,8 @@ function luna.hud.DrawAll()
         -- if _max_armor < ply:Armor() then _max_armor = ply:Armor() end
         _max_armor = ply:GetMaxArmor()
         _max_health = ply:GetMaxHealth()
-        surface_SetDrawColor(color_white)
-        surface_SetMaterial(logohud)
-        surface_DrawTexturedRect(scrw - w(350), h(-40), w(300), h(200))
+
+
         surface_SetMaterial(ui_vignette)
         surface_SetDrawColor(color_black)
         --surface_SetMaterial(rc_overlay) -- надо сделать спецом для РК отдельный визуал епта

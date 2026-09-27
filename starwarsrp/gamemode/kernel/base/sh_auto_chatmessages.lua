@@ -22,7 +22,6 @@ do
         "Razem z wami umocnimy status najlepszego serwera SWRP!",
         "Jeśli znalazłeś błąd/eksploit - skontaktuj się z Kierownictwem projektu lub zostaw zgłoszenie na Discordzie: https://discord.gg/NavP36Sxcm",
         "Nasz Discord: https://discord.gg/NavP36Sxcm",
-        "Jeśli chcesz wesprzeć projekt finansowo: https://discord.gg/NavP36Sxcm",
         "Na serwerze jest lokalny czat NonRP - /l",
         "Aby włączyć widok z trzeciej osoby, naciśnij F1!",
         "Dzięki waszemu wsparciu finansowemu możemy dalej rozwijać wasz ulubiony Piwnica Granie • Wojna Klonów!",

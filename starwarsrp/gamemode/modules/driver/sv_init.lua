@@ -37,7 +37,7 @@ netstream.Hook("Driver_BuyVehicle", function(pPlayer, data)
 				if features[feature] then
 					vehicle = veh
 				else
-					re.util.Notify("red", pPlayer, "Ten sprzęt nie jest dla Ciebie dostępna.")
+					re.util.Notify("red", pPlayer, "Ten pojazd nie jest dla Ciebie dostępny.")
 					-- break
 
 					return
@@ -61,7 +61,7 @@ netstream.Hook("Driver_BuyVehicle", function(pPlayer, data)
 		end
 	else
 		if not GMap.Vehicles[vehicle] or GMap.Vehicles[vehicle] <= 0 then
-			re.util.Notify("red", pPlayer, "Ten sprzęt jest niedostępna w magazynie.")
+			re.util.Notify("red", pPlayer, "Ten pojazd jest niedostępna w magazynie.")
 			return
 		end
 
@@ -123,7 +123,7 @@ netstream.Hook("Driver_SpawnVehicle", function(pPlayer, data)
 
 		if not game.GetMap() == DEFAULT_MAP then
 			if not GMap.Vehicles[vehicle_class] or GMap.Vehicles[vehicle_class] <= 0 then
-				re.util.Notify("red", pPlayer, "Ten sprzęt jest niedostępna w magazynie.")
+				re.util.Notify("red", pPlayer, "Ten pojazdjest niedostępna w magazynie.")
 				return
 			end
 		end

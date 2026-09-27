@@ -83,17 +83,17 @@ net.Receive('Arenal.Networking-ammo', function(_, ply)
     end
     local ammo = GetAmmoType(class)
     if not ammo then
-        re.util.Notify('yellow', ply, 'Błąd: Nie udało się pobrać typu amunicji.')
+        re.util.Notify('yellow', ply, 'Błąd: Nie udało się uzyskać informacji o typie nabojów.')
         return
     end
     local item = sup_inv.NewItem(string.upper(ammo), 1)
     if not item then
-        re.util.Notify('yellow', ply, 'Błąd: Nie udało się stworzyć przedmiotu dla amunicji.')
+        re.util.Notify('yellow', ply, 'Błąd: Nie udało się utworzyć przedmiotu na naboje.')
         return
     end
     local base = sup_inv.GetBaseClass(string.upper(ammo))
     if not sup_inv.ValidItem(string.upper(ammo)) then
-        re.util.Notify('yellow', ply, Format('[???] Ups, wygląda na to, że nie ma tego przedmiotu. Skontaktuj się z twórcą (!Skilow - dc) %s', ammo))
+        re.util.Notify('yellow', ply, Format('[???] Ups, wygląda na to, że nie ma takiego przedmiotu. Skontaktuj się z administracją %s', ammo))
         return
     end
     local amountToAdd = (base and base.togive) or 1
@@ -129,7 +129,7 @@ net.Receive('Arenal.Networking-Action', function(_, ply)
             inv:Add(i)
         end
 
-        re.util.Notify('yellow', ply, 'Zabrałeś całą broń z arsenału!')
+        re.util.Notify('yellow', ply, 'Zabraliście całą broń z arsenału!')
     elseif action == 'returnall' then
         for _, v in pairs(availableWeapons) do
             if sup_inv.BLOCKED[v] then
@@ -146,7 +146,7 @@ net.Receive('Arenal.Networking-Action', function(_, ply)
             if inv:Contains(v) then timer.Simple(.2, function() inv:RemoveItem(x, y) end) end
         end
 
-        re.util.Notify('yellow', ply, 'Zwróciłeś całą broń do arsenału!')
+        re.util.Notify('yellow', ply, 'Zwróciliście całą broń do arsenału!')
         ply:SelectWeapon('weapon_hands')
     elseif action == 'take' then
         local wep = net.ReadString()
@@ -159,7 +159,7 @@ net.Receive('Arenal.Networking-Action', function(_, ply)
             local i = sup_inv.NewItem(wep, 1)
             if not inv:Contains(wep) and i and sup_inv.ValidItem(wep) then
                 inv:Add(i)
-                re.util.Notify('yellow', ply, 'Zabrałeś ' .. GetName(wep) .. ' z arsenału!')
+                re.util.Notify('yellow', ply, 'Zabraliście ' .. GetName(wep) .. ' z arsenału!')
             end
             --  if vaf(wep) then ply:Give(wep) return end
             --  if string.find(wep, 'arrest') then ply:Give(wep) return end inv:Add(sup_inv.NewItem(wep))
@@ -178,7 +178,7 @@ net.Receive('Arenal.Networking-Action', function(_, ply)
             local item = inv:GetItem(x, y)
             if inv:GetEquipped(item.weptype) then inv:UnEquip(item.weptype, true) end
             if inv:Contains(wep) then timer.Simple(.2, function() inv:RemoveItem(x, y) end) end
-            re.util.Notify('yellow', ply, 'Zwróciłeś ' .. wep .. ' do arsenału!')
+            re.util.Notify('yellow', ply, 'Oddałeś ' .. wep .. ' do arsenału!')
         end
     end
 end)

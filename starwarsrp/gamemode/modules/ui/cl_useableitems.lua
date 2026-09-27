@@ -49,7 +49,7 @@ tbl = {
 	["zay_artillery"] = {
 		{
 			key = "E",
-			info = "Навести Артиллерию"
+			info = "Skierować artylerię"
 		}
 	},
 	["lfs_fb_laatigunship"] = {

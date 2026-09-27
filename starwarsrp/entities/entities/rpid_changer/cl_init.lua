@@ -21,7 +21,7 @@ function ENT:Draw()
 				draw.Icon(icon_size*-.6,icon_size*-.5-80,icon_size,icon_size,mat_wep1,color_white)
 				draw.ShadowSimpleText( 'Oficer Lupus', luna.NPC1, -3, 0, Color(17, 148, 240), TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP, 1, Color(0, 0, 0, 255))
 				draw.ShadowSimpleText( 'Oficer Lupus', luna.NPC1Neon, -3, 0, Color(17, 148, 240), TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP, 1, Color(0, 0, 0, 255))
-				draw.ShadowSimpleText( 'Tutaj możesz zmienić swój identyfikator IDN.', luna.NPC2, -3, 70, color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP, 1, Color(0, 0, 0, 255))
+				draw.ShadowSimpleText( 'Tutaj możesz zmienić swój identyfikator', luna.NPC2, -3, 70, color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP, 1, Color(0, 0, 0, 255))
                 --draw.ShadowSimpleText( self:GetUses() .. '/30', luna.NPC2, -3, 110, color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP, 1, Color(0, 0, 0, 255))
 			render.PopFilterMin()
 		cam.End3D2D()
@@ -74,8 +74,8 @@ netstream.Hook("RPIDChanger_OpenMenu", function(data)
 
         draw.RoundedBox(6,w*.5 - 150, h*.5 - 50 - 200,300,100,Color(22, 23, 28, 150))
 
-        draw.ShadowSimpleText('Zmiana twojego IDN kosztuje', luna.MontBase22, w*.5, h*.5 - 220, Color(255, 255, 255, 255), 1)
-        draw.ShadowSimpleText('10 000 Kredytów', luna.MontBase22, w*.5, h*.5 - 200, Color(255, 255, 255, 255), 1)
+        draw.ShadowSimpleText('Szacowana jest zmiana Państwa identyfikatora IDN', luna.MontBase22, w*.5, h*.5 - 220, Color(255, 255, 255, 255), 1)
+        draw.ShadowSimpleText('za 10 000 kredytów', luna.MontBase22, w*.5, h*.5 - 200, Color(255, 255, 255, 255), 1)
     end
 
 

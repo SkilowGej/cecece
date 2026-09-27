@@ -213,7 +213,7 @@ function GM:CanPlayerEnterVehicle(ply, vehicle, role)
 			if #base:GetPassengerSeats() > 0 then
 				ply:EnterVehicle(table.Random(base:GetPassengerSeats()))
 			else
-				re.util.Notify("red", ply, "Miejsce pilota/kierowcy jest dla Ciebie niedostępne z powodu braku specjalizacji!")
+				re.util.Notify("red", ply, "Stanowisko pilota/kierowcy jest dla Ciebie niedostępne z powodu braku odpowiedniej specjalizacji!")
 			end
 
 			return false

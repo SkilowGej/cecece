@@ -78,7 +78,7 @@ net.Receive("PlayerRespawnRequest", function(len, ply)
             DisableCollision(ply)
         else
             local remainingTime = math.ceil(RESPAWN_TIME - timeSinceDeath)
-            ply:Notify("Подождите с возрождением еще " .. remainingTime .. " секунд.")
+            ply:Notify("Do odrodzenia pozostało " .. remainingTime .. " sekund.")
         end
     end
 end)

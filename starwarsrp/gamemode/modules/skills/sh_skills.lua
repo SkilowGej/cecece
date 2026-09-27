@@ -161,7 +161,7 @@ re.skills.tree = {
 			},
 		}
 	},
-	["damage_critical"] = {
+	["damage_1"] = {
 		skill_id = "damage_critical",
 		max_mult = 5,
 		pos = {x = -320, y = 128},
@@ -226,7 +226,7 @@ function pMeta:CanResetSkill(unique, lasttree)
 		return false
 	end
 
-	for uni, tree in pairs(lasttree or re.skills.FindTreeByUnique(unique).after or {}) do
+	for uni, tree in pairs(lasttree or re.skill.FindTreeByUnique(unique).after or {}) do
 		if self:GetCharSkillLevel(uni) > 0 then
 			return false
 		end
@@ -284,13 +284,13 @@ function re.skill.FindTreeBySkillID(skill_id, lasttree)
 	return to_return
 end
 
-function re.skills.FindTreeByUnique(unique, lasttree)
+function re.skill.FindTreeByUnique(unique, lasttree)
 	local to_return = false
 	for uni, tree in pairs(lasttree or re.skills.tree) do
 		if to_return then break end
 
 		if tree.after then
-			to_return = re.skills.FindTreeByUnique(unique, tree.after)
+			to_return = re.skill.FindTreeByUnique(unique, tree.after)
 		end
 
 		if uni == unique then

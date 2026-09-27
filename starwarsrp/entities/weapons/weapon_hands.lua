@@ -390,7 +390,7 @@ if CLIENT then
 			surface.SetDrawColor(col.white )
 			surface.DrawTexturedRect( scale(10), scale(10), scale(32), scale(32) )
 
-			draw.ShadowSimpleText( "АНИМАЦИИ", luna.MontBase30, scale(50), scale(12), col.white, 0, 3 )
+			draw.ShadowSimpleText( "ANIMACJE", luna.MontBase30, scale(50), scale(12), col.white, 0, 3 )
 		end
 
 		local close = panel:Add( 'DButton' )

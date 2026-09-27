@@ -483,7 +483,7 @@ local function OpenCharacterMenu(data)
 		footerCharArmor:SetSize(LeftPanel:GetWide() * .50, 70)
 		footerCharArmor:SetPos(LeftPanel:GetWide() - footerCharArmor:GetWide(), 110)
 		footerCharArmor.Paint = function(s, w, h)
-			local armor = CurProf and markup.Parse('<font=' .. luna.MontBase30 .. '><colour = 200, 200, 200>Pancerz: </colour><colour = 53, 53, 241>' .. re.jobs[CurProf].maxArmor .. '</colour></font>')
+			local armor = CurProf and markup.Parse('<font=' .. luna.MontBase30 .. '><colour = 200, 200, 200>Zbroja: </colour><colour = 53, 53, 241>' .. re.jobs[CurProf].maxArmor .. '</colour></font>')
 			armor:Draw(0, h * .5, TEXT_ALIGN_LEFT, TEXT_ALIGN_CENTER)
 		end
 
@@ -688,13 +688,13 @@ initcharMenu = function(characters)
 	logoImage:SetPos(halfWidth - logoImage:GetWide() * 0.5, halfPadding)
 	local titleLabel = Menu:Add("DLabel")
 	surface.SetFont(luna.LunaMontMenuMiniFont)
-	local xSize, _ = surface.GetTextSize('SUP • Community')
+	local xSize, _ = surface.GetTextSize('PIWNICA GRANIE')
 	titleLabel:SetWide(xSize)
 	titleLabel:SetText('')
 	titleLabel:SetPos(halfWidth + logoImage:GetWide() * 0.5 + 10, halfPadding + logoImage:GetWide() * 0.5 - math.max(ScreenScale(4), 18) / 2)
 	titleLabel.Paint = function(s, w, h)
 		draw.Text({
-			text = 'SUP • Community',
+			text = 'PIWNICA GRANIE',
 			font = luna.LunaMontMenuMiniFont,
 			pos = {0, 0}
 		})

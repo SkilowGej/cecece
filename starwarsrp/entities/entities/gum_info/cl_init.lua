@@ -34,7 +34,7 @@ function ENT:Draw()
                             draw.SimpleText(str, luna.MontBaseLarge, x + width/2, 470 + (i*80), Color( 255, 255, 255, 255 ), 1, 1)
                         end
                     else
-                        draw.SimpleText('Nie zajęte', luna.MontBaseLarge, x + width/2, 300, Color( 65, 255, 65, 255 ), 1, 1)
+                        draw.SimpleText('Wolne', luna.MontBaseLarge, x + width/2, 300, Color( 65, 255, 65, 255 ), 1, 1)
                     end
                 end
             end

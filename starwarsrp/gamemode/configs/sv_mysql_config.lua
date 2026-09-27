@@ -1,8 +1,8 @@
 MySQLite.initialize({
     EnableMySQL = true,
-    Host = "194.69.160.11",
-    Username = "u11658_LUgMaU2xbw",
-    Password = "P+PKg@vmOz@sIto6G+2wpNFe",
-    Database_name = "s11658_serwer",
+    Host = "127.0.0.1",
+    Username = "root",
+    Password = "",
+    Database_name = "s334_war4",
     Database_port = 3306
 })

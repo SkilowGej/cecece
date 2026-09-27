@@ -28,9 +28,9 @@ function ENT:Draw()
         draw.RoundedBox(0, icon_size * -.6, icon_size * -.5 - 80, icon_size, icon_size, Color(0, 0, 0, 150))
         draw.DrawOutlinedRect(icon_size * -.6, icon_size * -.5 - 80, icon_size, icon_size, Color(255, 255, 255, 150))
         draw.Icon(icon_size * -.6, icon_size * -.5 - 80, icon_size, icon_size, mat_wep1, color_white)
-        draw.ShadowSimpleText('Wydawanie broni', luna.NPC1, -3, 0, Color(17, 148, 240), TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP, 1, Color(0, 0, 0, 255))
-        draw.ShadowSimpleText('Wydawanie broni', luna.NPC1Neon, -3, 0, Color(17, 148, 240), TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP, 1, Color(0, 0, 0, 255))
-        draw.ShadowSimpleText('tutaj możesz otrzymać broń', luna.NPC2, -3, 70, color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP, 1, Color(0, 0, 0, 255))
+        draw.ShadowSimpleText('Wydawanie uzbrojenia', luna.NPC1, -3, 0, Color(17, 148, 240), TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP, 1, Color(0, 0, 0, 255))
+        draw.ShadowSimpleText('Wydawanie uzbrojenia', luna.NPC1Neon, -3, 0, Color(17, 148, 240), TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP, 1, Color(0, 0, 0, 255))
+        draw.ShadowSimpleText('tutaj można zdobyć broń', luna.NPC2, -3, 70, color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP, 1, Color(0, 0, 0, 255))
         --draw.ShadowSimpleText( self:GetUses() .. '/30', luna.NPC2, -3, 110, color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP, 1, Color(0, 0, 0, 255))
         render.PopFilterMin()
         cam.End3D2D()
@@ -110,8 +110,8 @@ local function OpenMenushka(ent, availableWeapons)
         DrawBox(0, 0, w, 60, gray)
         DrawBox(0, 0, w, h, gray2)
         surface.SetFont(luna.MontBaseHud)
-        local nW, nH = surface.GetTextSize('Arsenal wojskowy')
-        draw.SimpleText('Arsenal wojskowy', luna.MontBaseHud, (w - nW) / 2, height(15), white)
+        local nW, nH = surface.GetTextSize('Arsenał Wojskowy')
+        draw.SimpleText('Arsenał Wojskowy', luna.MontBaseHud, (w - nW) / 2, height(15), white)
     end
 
     local ArsenalTakeAll = vgui.Create('ArsenalButton', ArsenalPanel)
@@ -169,7 +169,7 @@ local function OpenMenushka(ent, availableWeapons)
         if Arsenal.Selected then
             local wepdata = weapons.Get(Arsenal.Selected)
             if wepdata then
-                local name = wepdata.PrintName or 'Nazwa niedostępna'
+                local name = wepdata.PrintName or 'Tytuł niedostępny'
                 local colors = {
                     ['Niezwykłe'] = Color(125, 213, 235)
                 }
@@ -177,7 +177,7 @@ local function OpenMenushka(ent, availableWeapons)
                 surface.SetFont(luna.MontBaseHud)
                 local nW, nH = surface.GetTextSize(name)
                 draw.SimpleText(name, luna.MontBaseHud, (w - nW) / 2, 5, color_white)
-                local rarity = wepdata.rarity or 'Zwykłe'
+                local rarity = wepdata.rarity or 'Zwykły'
                 local desc = wepdata.desc or 'Opis niedostępny'
                 if rarity then
                     local nW, nH = surface.GetTextSize(rarity)
@@ -207,8 +207,8 @@ local function OpenMenushka(ent, availableWeapons)
     ArsenalTake.Paint = function(self, w, h)
         DrawBox(0, 0, w, h, gray)
         surface.SetFont(luna.MontBaseHud)
-        local nW, nH = surface.GetTextSize('Zwróć wszystko')
-        draw.SimpleText('Weź', luna.MontBaseHud, (w - nW) / 0.5, height(11), white)
+        local nW, nH = surface.GetTextSize('Przywróć wszystko')
+        draw.SimpleText('                 Wyposaż', luna.MontBaseHud, (w - nW) / 0.5, height(11), white)
     end
 
     local ArsenalReturn = vgui.Create('ArsenalButton', ArsenalPanelRight)
@@ -224,8 +224,8 @@ local function OpenMenushka(ent, availableWeapons)
     ArsenalReturn.Paint = function(self, w, h)
         DrawBox(0, 0, w, h, gray)
         surface.SetFont(luna.MontBaseHud)
-        local nW, nH = surface.GetTextSize('Zwróć wszystko')
-        draw.SimpleText('Zwróć', luna.MontBaseHud, (w - nW) / 0.7, height(11), white)
+        local nW, nH = surface.GetTextSize('Przywróć wszystko')
+        draw.SimpleText('                 Zwróć', luna.MontBaseHud, (w - nW) / 0.7, height(11), white)
     end
 
     local ArsenalNaebal = vgui.Create('ArsenalButton', ArsenalPanelRight)
@@ -241,8 +241,8 @@ local function OpenMenushka(ent, availableWeapons)
     ArsenalNaebal.Paint = function(self, w, h)
         DrawBox(0, 0, w, h, gray)
         surface.SetFont(luna.MontBaseHud)
-        local nW, nH = surface.GetTextSize('Zwróć wszystko')
-        draw.SimpleText('Amunicja', luna.MontBaseHud, (w - nW) / .7, height(11), white)
+        local nW, nH = surface.GetTextSize('Przywróć wszystko')
+        draw.SimpleText('            Weź Naboje', luna.MontBaseHud, (w - nW) / .7, height(11), white)
     end
 
     local ArsenalWeapon = vgui.Create('ModelImage', ArsenalPanelRight)

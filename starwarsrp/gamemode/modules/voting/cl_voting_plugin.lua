@@ -137,9 +137,9 @@ local function createRatingUI(parentPanel, voteId, minRating, maxRating)
     ratingSlider:SetMin(minRating)
     ratingSlider:SetMax(maxRating)
     ratingSlider:SetDecimals(0)
-    ratingSlider:SetText("Оценка")
+    ratingSlider:SetText("Ocena")
 
-    local submitButton = createButton(panel, "Отправить", FONTS.TEXT, COLORS.BTN_NORMAL, COLORS.BTN_HOVER, COLORS.BTN_DISABLED, 280, 0, 90, 30, function()
+    local submitButton = createButton(panel, "Wyślij", FONTS.TEXT, COLORS.BTN_NORMAL, COLORS.BTN_HOVER, COLORS.BTN_DISABLED, 280, 0, 90, 30, function()
         net.Start("VotingPlugin")
         net.WriteUInt(4, 4)
         net.WriteUInt(voteId, 32)
@@ -167,7 +167,7 @@ local function createMultipleChoiceUI(parentPanel, voteId, options)
         optionsCombo:AddChoice(option)
     end
 
-    local submitButton = createButton(panel, "Голосовать", FONTS.TEXT, COLORS.BTN_NORMAL, COLORS.BTN_HOVER, COLORS.BTN_DISABLED, 280, 0, 90, 30, function()
+    local submitButton = createButton(panel, "Głosuj", FONTS.TEXT, COLORS.BTN_NORMAL, COLORS.BTN_HOVER, COLORS.BTN_DISABLED, 280, 0, 90, 30, function()
         local selectedOption = optionsCombo:GetSelected()
         if selectedOption then
             net.Start("VotingPlugin")
@@ -179,7 +179,7 @@ local function createMultipleChoiceUI(parentPanel, voteId, options)
             panel:Remove()
             resizeVoteStatusUI(voteId)
         else
-            createLabel(panel, "Выберите вариант!", FONTS.TEXT, COLORS.RED, 0, 35)
+            createLabel(panel, "Wybierz opcję!", FONTS.TEXT, COLORS.RED, 0, 35)
         end
     end)
 
@@ -223,8 +223,8 @@ local function createVoteStatusUI(voteId, voteName, voteOptions, voteResponseTyp
     end
 
     local resultsList = vgui.Create("DListView", contentPanel)
-    resultsList:AddColumn("Вариант"):SetFixedWidth((MAX_FRAME_WIDTH - 4 * PADDING) / 2)
-    resultsList:AddColumn("Голоса"):SetFixedWidth((MAX_FRAME_WIDTH - 4 * PADDING) / 2)
+    resultsList:AddColumn("Wariant"):SetFixedWidth((MAX_FRAME_WIDTH - 4 * PADDING) / 2)
+    resultsList:AddColumn("Głosy"):SetFixedWidth((MAX_FRAME_WIDTH - 4 * PADDING) / 2)
     resultsList:SetHeaderHeight(20)
     resultsList.Paint = function(_, w, h)
         draw.RoundedBox(4, 0, 0, w, h, COLORS.INPUT_BG)
@@ -249,7 +249,7 @@ local function createVoteStatusUI(voteId, voteName, voteOptions, voteResponseTyp
         draw.RoundedBox(8, 0, 0, w, h, COLORS.PANEL_BG)
     end
 
-    local timerLabel = createLabel(bottomPanel, "Время: " .. voteDuration .. "с", FONTS.TEXT, COLORS.WHITE, 10, 5)
+    local timerLabel = createLabel(bottomPanel, "Czas: " .. voteDuration .. "s", FONTS.TEXT, COLORS.WHITE, 10, 5)
 
     local closeButton = createButton(bottomPanel, "X", FONTS.TEXT, COLORS.RED, COLORS.RED, COLORS.RED, bottomPanel:GetWide() - 25, 5, 20, 20, function()
         frame:Close()
@@ -258,7 +258,7 @@ local function createVoteStatusUI(voteId, voteName, voteOptions, voteResponseTyp
 
     local cancelButton
     if LocalPlayer():IsAdmin() then
-        cancelButton = createButton(bottomPanel, "Отмена", FONTS.TEXT, COLORS.RED, COLORS.RED, COLORS.RED, bottomPanel:GetWide() - 80, 5, 50, 20, function()
+        cancelButton = createButton(bottomPanel, "Anulowanie", FONTS.TEXT, COLORS.RED, COLORS.RED, COLORS.RED, bottomPanel:GetWide() - 80, 5, 50, 20, function()
             net.Start("VotingPlugin")
             net.WriteUInt(5, 4)
             net.WriteUInt(voteId, 32)
@@ -315,11 +315,11 @@ local function createVoteStatusUI(voteId, voteName, voteOptions, voteResponseTyp
         voteDuration = voteDuration - 1
         if voteDuration >= 0 then
             if IsValid(timerLabel) then
-                timerLabel:SetText("Время: " .. voteDuration .. "с")
+                timerLabel:SetText("Czas: " .. voteDuration .. "s")
             end
         else
             if IsValid(timerLabel) then
-                timerLabel:SetText("Голосование закрыто")
+                timerLabel:SetText("Głosowanie zostało zakończone")
             end
         end
     end)
@@ -346,7 +346,7 @@ local function updateVoteStatusUI(voteId, voteResults, isClosed)
 
     if isClosed then
         if IsValid(voteUI.timerLabel) then
-            voteUI.timerLabel:SetText("Голосование закрыто")
+            voteUI.timerLabel:SetText("Głosowanie zostało zakończone")
         end
         timer.Simple(10, function()
             if IsValid(voteUI.frame) then
@@ -389,22 +389,22 @@ local function validateInputs(nameInput, durationInput, responseCombo, ratingSet
     local voteOptions = getVoteOptions(optionsSettings)
 
     if string.Trim(voteName) == "" then
-        Derma_Message("Требуется название голосования.", "Ошибка", "ОК")
+        Derma_Message("Wymagana jest nazwa głosowania.", "Błąd", "OK")
         return false
     end
 
-    if responseType == "Множественный выбор" and #voteOptions == 0 then
-        Derma_Message("Для голосования с множественным выбором требуется хотя бы один вариант.", "Ошибка", "ОК")
+    if responseType == "Wybór wielokrotny" and #voteOptions == 0 then
+        Derma_Message("Aby można było przeprowadzić głosowanie z wieloma opcjami, wymagana jest co najmniej jedna opcja.", "Błąd", "OK")
         return false
     end
 
     if minRating >= maxRating then
-        Derma_Message("Минимальная оценка должна быть меньше максимальной.", "Ошибка", "ОК")
+        Derma_Message("Ocena minimalna musi być niższa od oceny maksymalnej.", "Błąd", "OK")
         return false
     end
 
     if voteDuration <= 0 then
-        Derma_Message("Длительность голосования должна быть больше 0.", "Ошибка", "ОК")
+        Derma_Message("Czas trwania głosowania musi być większy od 0.", "Błąd", "OK")
         return false
     end
 
@@ -417,7 +417,7 @@ local function createRatingSettingsPanel(parentPanel)
     panel:SetVisible(false)
     panel.Paint = function() end
 
-    createLabel(panel, "Минимальная оценка:", FONTS.TEXT_MEDIUM, COLORS.WHITE, 10, 20)
+    createLabel(panel, "Minimalna ocena:", FONTS.TEXT_MEDIUM, COLORS.WHITE, 10, 20)
     local minRatingInput = vgui.Create("DNumberWang", panel)
     minRatingInput:SetPos(10, 50)
     minRatingInput:SetSize(240, 30)
@@ -426,7 +426,7 @@ local function createRatingSettingsPanel(parentPanel)
     minRatingInput:SetValue(0)
     minRatingInput:SetFont(FONTS.TEXT)
 
-    createLabel(panel, "Максимальная оценка:", FONTS.TEXT_MEDIUM, COLORS.WHITE, 10, 100)
+    createLabel(panel, "Maksymalna ocena:", FONTS.TEXT_MEDIUM, COLORS.WHITE, 10, 100)
     local maxRatingInput = vgui.Create("DNumberWang", panel)
     maxRatingInput:SetPos(10, 130)
     maxRatingInput:SetSize(240, 30)
@@ -462,13 +462,13 @@ local function createOptionsSettingsPanel(parentPanel)
     panel:SetVisible(true)
     panel.Paint = function() end
 
-    createLabel(panel, "Варианты голосования:", FONTS.TEXT_MEDIUM, COLORS.WHITE, 10, 10)
+    createLabel(panel, "Opcje głosowania:", FONTS.TEXT_MEDIUM, COLORS.WHITE, 10, 10)
 
     local optionsList = vgui.Create("DListView", panel)
     optionsList:SetPos(10, 40)
     optionsList:SetSize(240, 180)
     optionsList:SetMultiSelect(false)
-    optionsList:AddColumn("Вариант")
+    optionsList:AddColumn("Wariant")
     optionsList:SetHeaderHeight(20)
     optionsList.Paint = function(_, w, h)
         draw.RoundedBox(4, 0, 0, w, h, COLORS.INPUT_BG)
@@ -486,8 +486,8 @@ local function createOptionsSettingsPanel(parentPanel)
         end
     end
 
-    local addOptionButton = createButton(panel, "Добавить вариант", FONTS.TEXT, COLORS.BTN_NORMAL, COLORS.BTN_HOVER, COLORS.BTN_DISABLED, 10, 230, 115, 30, function()
-        Derma_StringRequest("Добавить вариант", "Введите текст варианта:", "", function(text)
+    local addOptionButton = createButton(panel, "Dodaj wariant", FONTS.TEXT, COLORS.BTN_NORMAL, COLORS.BTN_HOVER, COLORS.BTN_DISABLED, 10, 230, 115, 30, function()
+        Derma_StringRequest("Dodaj wariant", "Wprowadź tekst wariantu:", "", function(text)
             if text ~= "" then
                 local line = optionsList:AddLine(text)
                 for _, v in pairs(line.Columns) do
@@ -498,7 +498,7 @@ local function createOptionsSettingsPanel(parentPanel)
         end)
     end)
 
-    local removeOptionButton = createButton(panel, "Удалить вариант", FONTS.TEXT, COLORS.RED, Color(255, 100, 100), COLORS.BTN_DISABLED, 135, 230, 115, 30, function()
+    local removeOptionButton = createButton(panel, "Usuń wariant", FONTS.TEXT, COLORS.RED, Color(255, 100, 100), COLORS.BTN_DISABLED, 135, 230, 115, 30, function()
         local selectedItem = optionsList:GetSelectedLine()
         if selectedItem then
             optionsList:RemoveLine(selectedItem)
@@ -537,19 +537,19 @@ local function createVoteCreationMenu()
         draw.RoundedBox(8, 0, 0, w, h, COLORS.FRAME_BG)
     end
 
-    local titleLabel = createLabel(frame, "Создать голосование", FONTS.HEADER_LARGE, COLORS.YELLOW, 0, 20, TEXT_ALIGN_CENTER)
+    local titleLabel = createLabel(frame, "Utwórz ankietę", FONTS.HEADER_LARGE, COLORS.YELLOW, 0, 20, TEXT_ALIGN_CENTER)
     titleLabel:SetPos(frame:GetWide() / 2 - titleLabel:GetWide() / 2, 20)
 
     local mainPanel = createPanel(frame, 10, 70, 580, 540)
 
-    createLabel(mainPanel, "Детали", FONTS.HEADER, COLORS.YELLOW, 20, 20)
+    createLabel(mainPanel, "Szczegóły", FONTS.HEADER, COLORS.YELLOW, 20, 20)
     
-    createLabel(mainPanel, "Название голосования", FONTS.TEXT_MEDIUM, COLORS.WHITE, 20, 70)
+    createLabel(mainPanel, "Tytuł głosowania", FONTS.TEXT_MEDIUM, COLORS.WHITE, 20, 70)
     local nameInput = createInput(mainPanel, 20, 100, 260, 100)
     nameInput:SetMultiline(true)
     nameInput:SetFont(FONTS.TEXT)
 
-    createLabel(mainPanel, "Длительность (секунды)", FONTS.TEXT_MEDIUM, COLORS.WHITE, 20, 210)
+    createLabel(mainPanel, "Czas trwania (w sekundach)", FONTS.TEXT_MEDIUM, COLORS.WHITE, 20, 210)
     local durationInput = vgui.Create("DNumberWang", mainPanel)
     durationInput:SetPos(20, 240)
     durationInput:SetSize(260, 30)
@@ -558,14 +558,14 @@ local function createVoteCreationMenu()
     durationInput:SetValue(60)
     durationInput:SetFont(FONTS.TEXT)
 
-    createLabel(mainPanel, "Тип ответа", FONTS.HEADER, COLORS.YELLOW, 310, 20)
+    createLabel(mainPanel, "Rodzaj odpowiedzi", FONTS.HEADER, COLORS.YELLOW, 310, 20)
     local responseCombo = vgui.Create("DComboBox", mainPanel)
     responseCombo:SetPos(310, 70)
     responseCombo:SetSize(240, 30)
     responseCombo:SetFont(FONTS.TEXT)
-    responseCombo:AddChoice("Оценка")
-    responseCombo:AddChoice("Множественный выбор")
-    responseCombo:SetValue("Выберите тип ответа")
+    responseCombo:AddChoice("Ocena")
+    responseCombo:AddChoice("Wybór wielokrotny")
+    responseCombo:SetValue("Wybierz rodzaj odpowiedzi")
 
     local settingsPanel = createPanel(mainPanel, 300, 120, 260, 370)
 
@@ -573,13 +573,13 @@ local function createVoteCreationMenu()
     local optionsSettings = createOptionsSettingsPanel(settingsPanel)
 
     responseCombo.OnSelect = function(_, _, value)
-        ratingSettings:SetVisible(value == "Оценка")
-        optionsSettings:SetVisible(value == "Множественный выбор")
+        ratingSettings:SetVisible(value == "Ocena")
+        optionsSettings:SetVisible(value == "Wybór wielokrotny")
     end
 
     responseCombo:ChooseOptionID(1) -- Default to Rating
 
-    local createButton = createButton(mainPanel, "Создать голосование", FONTS.TEXT_MEDIUM, COLORS.BTN_NORMAL, COLORS.BTN_HOVER, COLORS.BTN_DISABLED, 20, 420, 540, 40, function()
+    local createButton = createButton(mainPanel, "Utwórz ankietę", FONTS.TEXT_MEDIUM, COLORS.BTN_NORMAL, COLORS.BTN_HOVER, COLORS.BTN_DISABLED, 20, 420, 540, 40, function()
         if validateInputs(nameInput, durationInput, responseCombo, ratingSettings, optionsSettings) then
             sendVoteData(nameInput, durationInput, responseCombo, ratingSettings, optionsSettings)
             frame:Close()
@@ -599,7 +599,7 @@ local function handleVoteResults(voteId, voteResults, responseType)
             numVotes = numVotes + votes
         end
         local averageRating = numVotes > 0 and (totalRating / numVotes) or 0
-        chat.AddText(COLORS.YELLOW, "[Голосование] ", COLORS.WHITE, "Средняя оценка: ", COLORS.GREEN, string.format("%.2f", averageRating))
+        chat.AddText(COLORS.YELLOW, "[Głosowanie] ", COLORS.WHITE, "Średnia ocena: ", COLORS.GREEN, string.format("%.2f", averageRating))
     elseif responseType == "Multiple Choice" then
         local maxVotes, winningOptions = 0, {}
         for option, votes in pairs(voteResults) do
@@ -611,10 +611,10 @@ local function handleVoteResults(voteId, voteResults, responseType)
             end
         end
         if #winningOptions == 1 then
-            chat.AddText(COLORS.YELLOW, "[Голосование] ", COLORS.WHITE, "Победивший вариант: ", COLORS.GREEN, winningOptions[1])
+            chat.AddText(COLORS.YELLOW, "[Głosowanie] ", COLORS.WHITE, "Zwycięska wersja: ", COLORS.GREEN, winningOptions[1])
         else
             local randomWinner = winningOptions[math.random(1, #winningOptions)]
-            chat.AddText(COLORS.YELLOW, "[Голосование] ", COLORS.WHITE, "Несколько вариантов имеют одинаковое количество голосов. Случайный победитель: ", COLORS.GREEN, randomWinner)
+            chat.AddText(COLORS.YELLOW, "[Głosowanie] ", COLORS.WHITE, "Kilka opcji uzyskało taką samą liczbę głosów. Losowy zwycięzca: ", COLORS.GREEN, randomWinner)
         end
     end
 end
@@ -658,7 +658,7 @@ net.Receive("VotingPlugin", function()
             frame:Close()
             VOTE_STATUS_UI[voteId] = nil
         end
-        chat.AddText(COLORS.YELLOW, "[Голосование] ", COLORS.WHITE, "Голосование было отменено администратором.")
+        chat.AddText(COLORS.YELLOW, "[Głosowanie] ", COLORS.WHITE, "Głosowanie zostało unieważnione przez administratora.")
     end
 end)
 
@@ -666,6 +666,6 @@ concommand.Add("votecreate", function(ply)
     if IsValid(ply) and ply:IsAdmin() then
         createVoteCreationMenu()
     else
-        chat.AddText(COLORS.RED, "У вас нет прав для создания голосований.")
+        chat.AddText(COLORS.RED, "Nie masz uprawnień do tworzenia ankiet.")
     end
 end)

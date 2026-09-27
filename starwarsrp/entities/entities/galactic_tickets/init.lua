@@ -31,7 +31,7 @@ net.Receive( 'Tickets:Buy', function( _, p )
 		GMap.Vehicles[class] = GMap.Vehicles[class] + count
 		AddTickets( price )
 
-		p:ChatPrint( '[!] Kupiłeś '.. GMap.Vehicles[class] + count.. ' szt. sprzętu "'.. class.. '".' )
+		p:ChatPrint( '[!] Zakupiłeś Państwo '.. GMap.Vehicles[class] + count.. ' szt. sprzętu "'.. class.. '".' )
 
 		syncAll()
 		return 
@@ -40,7 +40,7 @@ net.Receive( 'Tickets:Buy', function( _, p )
 	GMap.Vehicles[class] = count
 	TakeTickets( price )
 
-	p:ChatPrint( '[!] Kupiłeś '.. count.. ' szt. sprzętu "'.. class.. '".' )
+	p:ChatPrint( '[!] Zakupiłeś '.. count.. ' szt. sprzętu "'.. class.. '".' )
 
 	syncAll()
 end )
@@ -80,7 +80,7 @@ function ENT:Use(activator, caller)
     if not IsValid(activator) or not activator:IsPlayer() then return end
     
     if game.GetMap() == DEFAULT_MAP then
-        re.util.Notify("red", activator, "Na domowej mapie nie można! Fuj!")
+        re.util.Notify("red", activator, "Na mapie domowej nie można! Fuj")
         return
     end
 

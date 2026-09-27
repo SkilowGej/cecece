@@ -269,7 +269,7 @@ local function CreateDeathScreen(victim, dmginfo, respawnTime)
 
             for i, v in ipairs(dmginfo) do
                 if i > maxEntries then break end
-                local phrase = string.format("<font=text><colour=255,255,255>%s</colour> <colour=255,43,43>нанёс</colour> <colour=255,255,255>%d</colour> <colour=255,43,43>damage</colour>", v.attacker, v.damage)
+                local phrase = string.format("<font=text><colour=255,255,255>%s</colour> <colour=255,43,43>zadał</colour> <colour=255,255,255>%d</colour> <colour=255,43,43>damage</colour>", v.attacker, v.damage)
                 markup.Parse(phrase, w - 40):Draw(20, yOffset, TEXT_ALIGN_LEFT)
                 yOffset = yOffset + 24
             end
