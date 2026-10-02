@@ -167,6 +167,15 @@ else
 	netstream.Hook("RPCommands", function(...)
 		chat.AddText(...)
 	end)
+
+	netstream.Hook("EventMessage", function(message)
+    if not message or message == "" then return end
+
+    chat.AddText(
+        Color(255, 50, 50), "[EVENT] ",
+        Color(255, 255, 255), tostring(message)
+    )
+	end)
 end
 
 re.cmd.data = re.cmd.data or {}

@@ -614,13 +614,13 @@ local function OpenCharacterMenu(data)
 
 	local bottomLabel = CreationMenu:Add("DLabel")
 	surface.SetFont(luna.LunaMontNoticeFont)
-	local xSize, ySize = surface.GetTextSize('Serwer gry od SUP • zespół programistów. STAR WARS™ jest własnością firmy LucasFilm Ltd.')
+	local xSize, ySize = surface.GetTextSize('')
 	bottomLabel:SetSize(xSize, ySize)
 	bottomLabel:SetPos(CreationMenu:GetWide() * 0.5 - bottomLabel:GetWide() * 0.5, CreationMenu:GetTall() - ScreenScale(30))
 	bottomLabel:SetText('')
 	bottomLabel.Paint = function(s, w, h)
 		draw.Text({
-			text = "Serwer gry od SUP • zespół programistów. STAR WARS™ jest własnością firmy LucasFilm Ltd.",
+			text = "",
 			font = luna.LunaMontNoticeFont,
 			pos = {0, 0}
 		})
@@ -739,13 +739,13 @@ initcharMenu = function(characters)
 
 	local bottomLabel = Menu:Add("DLabel")
 	surface.SetFont(luna.LunaMontNoticeFont)
-	local xSize, ySize = surface.GetTextSize('Serwer gry od SUP • zespół programistów. STAR WARS™ jest własnością firmy LucasFilm Ltd.')
+	local xSize, ySize = surface.GetTextSize('')
 	bottomLabel:SetSize(xSize, ySize + 3)
 	bottomLabel:SetPos(Menu:GetWide() * 0.5 - bottomLabel:GetWide() * 0.5, Menu:GetTall() - ScreenScale(30))
 	bottomLabel:SetText('')
 	bottomLabel.Paint = function(s, w, h)
 		draw.Text({
-			text = "Serwer gry od SUP • zespół programistów. STAR WARS™ jest własnością firmy LucasFilm Ltd.",
+			text = "",
 			font = luna.LunaMontNoticeFont,
 			pos = {0, 0}
 		})

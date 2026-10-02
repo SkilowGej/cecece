@@ -89,7 +89,7 @@ local function OpenContextMenu()
 		Top:Dock(TOP)
 		Top.Paint = function(self, w, h)
 			draw.Icon(w - 48, 0, 48, 48, micro_s and mat_radiowave1 or mat_radiowave2, color_white)
-			draw.ShadowSimpleText('Częstotliwość:', luna.MontBase24, 85, 14, COLOR_WHITE, TEXT_ALIGN_RIGHT, TEXT_ALIGN_TOP)
+			draw.ShadowSimpleText('Kanał:', luna.MontBase24, 85, 14, COLOR_WHITE, TEXT_ALIGN_RIGHT, TEXT_ALIGN_TOP)
 		end
 
 		local RadioWang = vgui.Create('DNumberWang', Top)
@@ -97,21 +97,49 @@ local function OpenContextMenu()
 		RadioWang:SetPos(90, 10)
 		RadioWang:SetPaintBorderEnabled(true)
 		RadioWang:SetFont(luna.MontBaseHud)
-		-- RadioWang:SetText('')
+		RadioWang:SetMin(0)
+		RadioWang:SetMax(100)
+		RadioWang:SetDecimals(0)
+
 		local radio = LocalPlayer():GetNetVar('radio') and LocalPlayer():GetNetVar('radio') or 0
 		RadioWang:SetValue(radio)
 		RadioWang:SetZPos(10)
-		RadioWang.OnValueChange = function(self, value)
-			value = value and value ~= nil and value ~= '' and tonumber(value) >= 100 and 100 or tonumber(value) or 0
-			self:SetValue(value)
+
+		local function ChangeRadioChannel(value)
+			value = math.Clamp(tonumber(value) or 0, 0, 100)
+			RadioWang:SetValue(value)
 			netstream.Start('WalkieTalkie.ChangeChannel', {
 				channel = value
 			})
 		end
 
+		RadioWang.OnValueChanged = function(self, value)
+			ChangeRadioChannel(value)
+		end
+
+		RadioWang.OnEnter = function(self)
+			ChangeRadioChannel(self:GetValue())
+		end
+
+		RadioWang.OnLoseFocus = function(self)
+			ChangeRadioChannel(self:GetValue())
+		end
+
 		RadioWang.Paint = function(self, w, h)
 			draw.RoundedBox(6, 0, 0, w, h, ColorAlpha(COLOR_BLACK, 90))
 			self:DrawTextEntryText(Color(190, 190, 190, 255), COLOR_HOVER, COLOR_WHITE)
+		end
+
+		if IsValid(RadioWang.Up) then
+			RadioWang.Up.Paint = function(self, w, h)
+				draw.SimpleText('▲', 'DermaDefaultBold', w / 2, h / 2, color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+			end
+		end
+
+		if IsValid(RadioWang.Down) then
+			RadioWang.Down.Paint = function(self, w, h)
+				draw.SimpleText('▼', 'DermaDefaultBold', w / 2, h / 2, color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+			end
 		end
 
 		table.insert(no_close_onedit, RadioWang)
@@ -322,16 +350,27 @@ local function OpenContextMenu()
 			end
 		end
 
-		local Close = vgui.Create('DButton', Menu)
-		Close:SetSize(30, 30)
-		Close:SetText('')
-		Close:SetPos(Menu:GetWide() - Close:GetWide() - 20, 20)
-		Close.Paint = function(self, w, h)
-			draw.RoundedBox(6, 0, 0, w, h, COLOR_HOVER)
-			draw.SimpleText('X', luna.MontBase22, w / 2, h / 2, Color(255, 255, 255, 255), 1, 1)
-		end
+		if LocalPlayer():IsAdmin() then
+			local Close = vgui.Create('DButton', Menu)
+			Close:SetSize(30, 30)
+			Close:SetText('')
+			Close:SetPos(Menu:GetWide() - Close:GetWide() - 20, 20)
+			Close.Paint = function(self, w, h)
+				draw.RoundedBox(6, 0, 0, w, h, COLOR_HOVER)
+				draw.SimpleText('X', luna.MontBase22, w / 2, h / 2, Color(255, 255, 255, 255), 1, 1)
+			end
 
-		Close.DoClick = function(self) Menu:SetVisible(false) end
+			Close.DoClick = function(self)
+				Menu:SetVisible(false)
+
+				if IsValid(g_ContextMenu) then
+					g_ContextMenu:Open()
+					if menubar and menubar.ParentTo then
+						menubar.ParentTo(g_ContextMenu)
+					end
+				end
+			end
+		end
 		do
 			local i = 1
 			local tbl = SUP_ANIMATIONS
@@ -396,6 +435,11 @@ function GM:OnContextMenuClose()
 	gui.EnableScreenClicker(false)
 	surface.PlaySound('sup_sound/deny.wav')
 	no_close_onedit = no_close_onedit or {}
+
+	if IsValid(g_ContextMenu) then
+		g_ContextMenu:Close()
+	end
+
 	if Menu and IsValid(Menu) then
 		local no_cl = true
 		for k, v in pairs(no_close_onedit) do
@@ -406,7 +450,6 @@ function GM:OnContextMenuClose()
 		end
 
 		if Menu:IsVisible() and no_cl then
-			-- Menu:SetVisible(false)
 			Menu:AlphaTo(0, .2, 0, function() Menu:Close() end)
 		end
 	end

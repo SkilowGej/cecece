@@ -1,8 +1,8 @@
 if not skill then return end
 local skill = skill
-skill.name = "Жажда жизни"
-skill.desc = "Убивая, вы получаете %s едениц здоровья."
-skill.subdesc = "За каждое убийство +%sхп"
+skill.name = "Żądza życia"
+skill.desc = "Zabijając przeciwnika, zyskujesz %s punktów zdrowia."
+skill.subdesc = "Za każde zabójstwo +%s hp"
 skill.icon = Material("luna_icons/vampire-dracula.png", "smooth noclamp")
 
 if SERVER then

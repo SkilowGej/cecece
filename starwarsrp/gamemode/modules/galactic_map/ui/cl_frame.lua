@@ -143,7 +143,7 @@ function PANEL:Paint(w, h)
     self:DrawConnections()
     self.canvas:PaintManual()
 
-    draw.SimpleText('Serwer gry od SUP • zespół programistów. STAR WARS™ jest własnością firmy LucasFilm Ltd.', 'gm.1', w*.5, h - scale(40), cfg.colors.white_copyright, 1, 4)
+    draw.SimpleText('', 'gm.1', w*.5, h - scale(40), cfg.colors.white_copyright, 1, 4)
 
     drawMouseText( cfg.mats.mouse1, 'Wybierz', w - scale(30), h - scale(30) )
     drawMouseText( cfg.mats.mouse2, 'Przybliż', w - scale(160), h - scale(30) )

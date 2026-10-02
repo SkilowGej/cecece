@@ -1,8 +1,8 @@
 if not skill then return end
 local skill = skill
-skill.name = "Стимуляторы"
+skill.name = "Stymulatory"
 skill.desc = "Just Like The Simulations..."
-skill.subdesc = "+%s%% к скорости бега"
+skill.subdesc = "+%s%% do prędkości biegu"
 skill.icon = Material("luna_icons/run.png", "smooth noclamp")
 
 if SERVER then

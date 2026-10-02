@@ -1,8 +1,8 @@
 if not skill then return end
 local skill = skill
-skill.name = "Иньекция"
-skill.desc = "Благодаря Иньекции в ваше тело, у вас повышается иммунитет при нахождении на других планетах"
-skill.subdesc = "+%s%% к Здоровью"
+skill.name = "Wstrzyknięcie"
+skill.desc = "Dzięki zastrzykom podawanym do organizmu wzrasta odporność podczas przebywania na innych planetach"
+skill.subdesc = "+%s%% na zdrowie"
 skill.icon = Material("luna_menus/medsys/narkoman.png", "smooth noclamp")
 
 if SERVER then

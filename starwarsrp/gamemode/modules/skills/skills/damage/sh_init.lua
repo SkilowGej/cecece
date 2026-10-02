@@ -1,8 +1,8 @@
 if not skill then return end
 local skill = skill
-skill.name = "Быстрый и разъярённый"
-skill.desc = "Вы наносите больше урона. Не распространяется на оружие ближнего боя. "
-skill.subdesc = "+%s%% к урону от оружия"
+skill.name = "Szybki i wściekły"
+skill.desc = "Zadajesz większe obrażenia. Nie dotyczy broni do walki wręcz. "
+skill.subdesc = "+%s%% do obrażeń zadawanych bronią"
 skill.icon = Material("luna_icons/bullets.png", "smooth noclamp")
 
 if SERVER then

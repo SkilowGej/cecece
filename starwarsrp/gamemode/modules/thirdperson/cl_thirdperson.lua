@@ -13,9 +13,12 @@ local smoothPos = Vector(0, 0, 0)
 local smoothAng = Angle(0, 0, 0)
 
 hook.Add("CreateMove", "Thirdperson_CreateMove", function(cmd)
-    if input.IsKeyDown(KEY_LALT) then return end
+    if not input.IsKeyDown(KEY_LALT) then return end
 
-    return false
+    -- Usuń IN_WALK, żeby +walk z Alta nie zmieniał prędkości ruchu
+    local buttons = cmd:GetButtons()
+    buttons = bit.band(buttons, bit.bnot(IN_WALK))
+    cmd:SetButtons(buttons)
 end)
 
 hook.Add("Think", "Thirdperson_Think", function()

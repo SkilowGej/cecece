@@ -1,8 +1,8 @@
 if not skill then return end
 local skill = skill
-skill.name = "Стрельба по шлемам"
-skill.desc = "Урон от попадания в головы НПС увеличен на %d%%."
-skill.subdesc = "Крит урон +%d%%"
+skill.name = "Strzelanie do hełmów"
+skill.desc = "Obrażenia zadawane przy trafieniu w głowę przeciwników zostały zwiększone o %d%%."
+skill.subdesc = "Kret – obrażenia +%d%%"
 skill.icon = Material("luna_icons/skull-crack.png", "smooth noclamp")
 
 if SERVER then

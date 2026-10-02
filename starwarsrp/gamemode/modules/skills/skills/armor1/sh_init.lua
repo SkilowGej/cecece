@@ -1,8 +1,8 @@
 if not skill then return end
 local skill = skill
-skill.name = "Броне пластины"
-skill.desc = "Увелечение брони на %d едениц."
-skill.subdesc = "+%s к Броне"
+skill.name = "Płyty pancerne"
+skill.desc = "Zwiększenie pancerza o %d jednostek."
+skill.subdesc = "+%s do pancerza"
 skill.icon = Material("luna_icons/artificial-hive.png", "smooth noclamp")
 
 if SERVER then

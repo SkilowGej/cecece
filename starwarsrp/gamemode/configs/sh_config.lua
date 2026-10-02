@@ -525,7 +525,7 @@ NOTIFY_DATE_FORMAT = "%H:%M"
 timer.Simple(0, function()
 	DEFAULT_PLAYER_STATS = {
 		["RunSpeed"] = 225,
-		["WalkSpeed"] = 95,
+		["WalkSpeed"] = 100,
 		["JumpPower"] = 180
 	}
 end)

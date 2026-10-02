@@ -103,7 +103,7 @@ end
 function PANEL:Paint( w, h )
     draw.Image( 0, 0, w, h, cfg.mats.back, cfg.colors.white )
     draw.Image( w - scale(700), h - scale(700), scale(700), scale(700), cfg.mats.gr, cfg.colors.gr )
-    draw.SimpleText( 'Serwer gry od SUP • zespół programistów. STAR WARS™ jest własnością firmy LucasFilm Ltd.', 'gm.1', w*.5, h - scale(40), cfg.colors.white, 1, 4 )
+    draw.SimpleText( '', 'gm.1', w*.5, h - scale(40), cfg.colors.white, 1, 4 )
 
     self.angle = (self.angle + self.rotationSpeed) % 360
     surface.SetMaterial( cfg.mats.big_circle )

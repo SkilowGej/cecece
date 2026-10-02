@@ -1,8 +1,12 @@
-re.skills = re.skill or { store = {}, hooks = {} } -- For stored skills
+re = re or {}
+re.skill = re.skill or {}
+re.skills = re.skill   -- lub osobno: re.skills = re.skills or { store = {}, hooks = {} }
+re.skills.store = re.skills.store or {}
+re.skills.hooks = re.skills.hooks or {}
 
 re.skills.tree = {
 	["armor_1"] = { -- Уникальный id скила
-		disabled = true,
+		disabled = false,
 		skill_id = "armor1",
 		max_mult = 1,
 		pos = {x = 192, y = 0}, -- Позиция в меню
@@ -22,7 +26,7 @@ re.skills.tree = {
 				end,
 				after = {
 					["armor_3"] = {
-						disabled = true,
+						disabled = false,
 						skill_id = "armor1",
 						max_mult = 5,
 						pos = {x = 0, y = 128},
@@ -34,7 +38,7 @@ re.skills.tree = {
 						end,
 						after = {
 							["armor_4"] = {
-								disabled = true,
+								disabled = false,
 								skill_id = "armor1",
 								max_mult = 1,
 								pos = {x = 0, y = 128},
@@ -71,7 +75,7 @@ re.skills.tree = {
 				end,
 				after = {
 					["speed_3"] = {
-						disabled = true,
+						disabled = false,
 						skill_id = "speed1",
 						max_mult = 5,
 						pos = {x = 0, y = 128},
